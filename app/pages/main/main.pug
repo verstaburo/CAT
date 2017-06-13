@@ -1,0 +1,9 @@
+extends ../../layouts/default
+include ../../components/main-header/main-header
+
+block head
+  - var pageTitle = 'CAT - Главная'
+
+block content
+  +b.main
+    +main-header()

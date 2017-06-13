@@ -3,7 +3,7 @@
 // ##########
 // Базовые настройки сетки сайта
 // ##########
-$container-width: 960px; // Ширина контейнера контента
+$container-width: 1280px; // Ширина контейнера контента
 $grid-container-width: 100%; // Ширина контейнера сетки
 $grid-cols: 12; // Количество колонок в сетке
 $grid-gap: 20px; // Расстояние между колонками
@@ -11,12 +11,15 @@ $grid-gap: 20px; // Расстояние между колонками
 // ##########
 // Цвета
 // ##########
-$color-main: blue; // Основной цвет сайта
+$color-main: #fc9a00; // Основной цвет сайта
 $color-placeholder: #777; // Основной цвет для placeholder
 $color-input: black; // Основной цвет input, select и textarea
 
 // ##########
 // Шрифты
 // ##########
-$font-main: Arial, sans-serif; // Основной шрифт сайта
-$font-second: Times New Roman, sans-serif; // Дополнительный шрифт
+$BebasNeue: 'Bebas Neue', sans-serif;
+$PfDin: 'Pf Din', sans-serif;
+$ProximaNova: 'Proxima Nova', sans-serif;
+
+$font-main: $BebasNeue;

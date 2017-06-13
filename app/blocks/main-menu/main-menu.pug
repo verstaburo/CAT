@@ -1,0 +1,5 @@
+mixin main-menu(data)
+  +b.UL.main-menu&attributes(attributes)
+    each item in data
+      +e.LI.item
+        +e.A(href=item.path).link= item.title

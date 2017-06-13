@@ -1,0 +1,25 @@
+.main-menu {
+  display: inline-flex;
+
+  &__item {
+
+    &:not(:first-of-type) {
+      margin-left: 70px;
+    }
+  }
+
+  &__link {
+    font-family: $PfDin;
+    font-size: 17px;
+    letter-spacing: .075em;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+
+    &:hover {
+      color: darken(#fff, 10%);
+    }
+  }
+}

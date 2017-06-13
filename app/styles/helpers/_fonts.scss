@@ -24,3 +24,237 @@
 800 — Extra Bold, Ultra Bold
 900 — Black, Heavy
 */
+
+//  Bebas Neue
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/BebasNeue Thin.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/BebasNeue Light.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/BebasNeue Regular.otf')  format('opentype');
+}
+
+// @font-face {
+//   font-family: 'Bebas Neue';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('../fonts/BebasNeue Book.otf')  format('opentype');
+// }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/BebasNeue Bold.otf')  format('opentype');
+}
+
+// Pf Din
+@font-face {
+  font-family: 'Pf Din';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/PFDinTextCompPro-XThin.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: italic;
+  font-weight: 100;
+  src: url('../fonts/PFDinTextCompPro-XThinItalic.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/PFDinTextCompPro-Thin.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: italic;
+  font-weight: 200;
+  src: url('../fonts/PFDinTextCompPro-ThinItalic.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/PFDinTextCompPro-Light.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/PFDinTextCompPro-LightItalic.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/PFDinTextCompPro-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/PFDinTextCompPro-Italic.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/PFDinTextCompPro-Medium.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/PFDinTextCompPro-MediumItalic.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/PFDinTextCompPro-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/PFDinTextCompPro-BoldItalic.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/PFDinTextCompPro-XBlack.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Pf Din';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../fonts/PFDinTextCompPro-XBlackItalic.ttf')  format('truetype');
+}
+
+// Proxima Nova
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/Proxima Nova Thin.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 100;
+  src: url('../fonts/Proxima Nova Thin Italic.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Proxima Nova Light.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/Proxima Nova Light Italic.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Proxima Nova Regular.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/Proxima Nova Regular Italic.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/Proxima Nova Semibold.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../fonts/Proxima Nova Semibold Italic.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Proxima Nova Bold.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/Proxima Nova Bold Italic.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/Proxima Nova Extrabold.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 800;
+  src: url('../fonts/Proxima Nova Extrabold Italic.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/Proxima Nova Black.otf')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../fonts/Proxima Nova Black Italic.otf')  format('opentype');
+}

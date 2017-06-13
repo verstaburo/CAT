@@ -1,0 +1,18 @@
+.main-header {
+  display: block;
+  // временный бэкграунд
+  background-color: grey;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__service {
+    margin-left: 90px;
+  }
+
+  &__about {
+    margin-left: auto;
+  }
+}

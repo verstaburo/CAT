@@ -1,0 +1,11 @@
+include ../../blocks/container/container
+include ../../blocks/logo/logo
+include ../../blocks/main-menu/main-menu
+
+mixin main-header()
+  +b.HEADER.main-header&attributes(attributes)
+    +container()
+      +logo()
+      - var mainMenu = getData('main-menu')
+      +main-menu(mainMenu.services).__service
+      +main-menu(mainMenu.about).__about
