@@ -1,0 +1,43 @@
+.header {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  @include screen(tablet, max) {
+    padding-top: 20px;
+    padding-bottom: 74px;
+  }
+
+  &_main {
+    // временный бэкграунд
+    background-color: transparent;
+
+    .menu {
+      margin-left: auto;
+      padding-left: 90px;
+
+      @include screen(tablet-wide, min) {
+        width: 100%;
+      }
+
+      &__item:nth-of-type(4) {
+        @include screen(tablet-wide, min) {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+
+    @include screen(tablet, max) {
+      justify-content: space-between;
+    }
+  }
+
+  &__burger {
+    margin-top: 5px;
+  }
+}

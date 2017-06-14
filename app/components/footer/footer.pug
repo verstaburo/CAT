@@ -1,0 +1,15 @@
+include ../../blocks/container/container
+
+mixin footer(main)
+  if main
+    +b.FOOTER.footer._main&attributes(attributes)
+      +container()
+        +e.phones
+          +e.text-item
+            +e.A(href='#').text +7 924 401 73 74
+          +e.text-item
+            +e.A(href='#').text +7 914 408 73 14
+        +e.mail
+          +e.text-item
+            +e.SPAN.text._grey Mail:
+            +e.A(href='#').text._value cpecavto@cat.ru

@@ -1,0 +1,54 @@
+.menu {
+  display: inline-flex;
+
+  @include screen(tablet, max) {
+    display: none;
+  }
+
+  &__item {
+
+    &:not(:first-of-type) {
+      @include screen(desktop, max) {
+        margin-left: 30px;
+      }
+
+      @include screen(desktop, min) {
+        margin-left: 70px;
+      }
+    }
+  }
+
+  &__link {
+    font-family: $PfDin;
+    font-size: 17px;
+    letter-spacing: .075em;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+
+    &:hover {
+      color: darken(#fff, 15%);
+    }
+  }
+}
+
+.burger {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 10px 0;
+  background-color: transparent;
+
+  &::before {
+    content: '';
+    width: 29px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+  }
+
+  @include screen(tablet, min) {
+    display: none;
+  }
+}

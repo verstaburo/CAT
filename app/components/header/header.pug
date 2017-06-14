@@ -1,0 +1,10 @@
+include ../../blocks/container/container
+include ../../blocks/logo/logo
+include ../../blocks/menu/menu
+
+mixin header()
+  +b.HEADER.header&attributes(attributes)
+    +container()
+      +logo()
+      +menu(getData('main-menu')).__menu
+      +burger().__burger

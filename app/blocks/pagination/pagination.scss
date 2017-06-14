@@ -1,0 +1,39 @@
+.pagination {
+  display: inline-flex;
+  align-items: baseline;
+
+  &__number {
+    font-size: 13px;
+    color: #d6d6e0;
+    letter-spacing: .025em;
+  }
+
+  &__dots {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 14px;
+
+    &:not(:first-of-type) {
+      margin-top: 22px;
+    }
+
+    // &:not(:first-of-type) {
+    //   margin-top: 22px;
+    // }
+
+    &_active {
+      background-color: $color-main;
+
+      & + .pagination__dot:not(.pagination__dot_active) {
+        margin-top: 44px;
+      }
+    }
+  }
+}

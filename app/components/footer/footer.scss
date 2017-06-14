@@ -1,0 +1,78 @@
+.footer {
+  display: block;
+  padding: 40px 0;
+
+  @include screen(tablet, max) {
+    padding: 20px 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  // Модификатор для главной страницы
+
+  &_main {
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a:hover {
+      color: darken(#fff, 15%);
+    }
+
+    .footer {
+
+      &__text {
+        color: #fff;
+
+        &_grey {
+          color: #ccc;
+        }
+
+        &_value {
+          margin-left: 20px;
+        }
+      }
+
+      &__text-item {
+
+        &:not(:first-of-type) {
+          @include screen(phablet, min) {
+            margin-left: 50px;
+          }
+        }
+      }
+
+      &__mail {
+        @include screen(phablet, max) {
+          display: none;
+        }
+      }
+
+      &__phones {
+        @include screen(phablet, max) {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  &__text-item {
+    display: inline-block;
+  }
+
+  &__text {
+    font-family: $PfDin;
+    font-size: 17px;
+    letter-spacing: .05em;
+
+    @include screen(phablet, max) {
+      font-size: 14px;
+    }
+  }
+}

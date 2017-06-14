@@ -1,9 +1,21 @@
 extends ../../layouts/default
-include ../../components/main-header/main-header
+include ../../components/header/header
+include ../../components/footer/footer
+include ../../blocks/full-bg/full-bg
+include ../../blocks/pagination/pagination
+include ../../blocks/scroll/scroll
 
 block head
   - var pageTitle = 'CAT - Главная'
 
+block header
+  +header()._main
+
 block content
-  +b.main
-    +main-header()
+  +full-bg('assets/images/background/main.jpg')._overlay._overlay_left._overlay_85
+  +b.MAIN.main.container
+    +pagination(1, 4).__pagination
+    +scroll().__scroll
+
+block footer
+  +footer(true)

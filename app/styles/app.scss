@@ -6,3 +6,10 @@
 @import '../blocks/**/*';
 @import '../components/**/*';
 @import '../pages/**/*';
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+}
