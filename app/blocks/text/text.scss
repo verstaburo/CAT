@@ -1,0 +1,16 @@
+.text {
+  display: block;
+
+  &_white {
+    color: #fff;
+  }
+
+  &_light {
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 16px;
+    letter-spacing: .025em;
+  }
+}

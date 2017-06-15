@@ -5,19 +5,20 @@
 
   @include screen(tablet, max) {
     padding-top: 20px;
-    padding-bottom: 74px;
+    padding-bottom: 20px;
   }
 
   &_main {
-    // временный бэкграунд
     background-color: transparent;
 
     .menu {
-      margin-left: auto;
-      padding-left: 90px;
-
       @include screen(tablet-wide, min) {
         width: 100%;
+      }
+
+      @include screen(tablet, min) {
+        margin-left: auto;
+        padding-left: 90px;
       }
 
       &__item:nth-of-type(4) {

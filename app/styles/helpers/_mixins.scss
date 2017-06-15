@@ -236,3 +236,14 @@ div {
   min-width: 100%;
   min-height: 100%;
 }
+
+// Standart project transition
+@mixin transition($value1, $value2:false) {
+  @if $value2 {
+    transition: $value1 .25s ease-in-out, $value2 .25s ease-in-out;
+  }
+
+  @else {
+    transition: $value1 .25s ease-in-out;
+  }
+}

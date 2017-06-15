@@ -1,5 +1,6 @@
 .main {
-  display: block;
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   position: relative;
 
@@ -18,10 +19,14 @@
     }
   }
 
+  &__center {
+    width: 685px;
+    margin: 0 auto;
+  }
+
   &__scroll {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 55%;
-    bottom: 0;
+    margin-top: auto;
+    margin-left: 53%;
+    padding-top: 20px;
   }
 }

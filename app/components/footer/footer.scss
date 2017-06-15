@@ -1,6 +1,6 @@
 .footer {
   display: block;
-  padding: 40px 0;
+  padding: 31px 0 40px;
 
   @include screen(tablet, max) {
     padding: 20px 0;

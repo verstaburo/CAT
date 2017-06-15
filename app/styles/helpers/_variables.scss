@@ -12,6 +12,9 @@ $grid-gap: 20px; // Расстояние между колонками
 // Цвета
 // ##########
 $color-main: #fc9a00; // Основной цвет сайта
+$color-dark: #1b1b21;
+$color-darkgrey: #4a4a53;
+$color-grey: #74747d;
 $color-placeholder: #777; // Основной цвет для placeholder
 $color-input: black; // Основной цвет input, select и textarea
 
@@ -22,4 +25,4 @@ $BebasNeue: 'Bebas Neue', sans-serif;
 $PfDin: 'Pf Din', sans-serif;
 $ProximaNova: 'Proxima Nova', sans-serif;
 
-$font-main: $BebasNeue;
+$font-main: $ProximaNova;

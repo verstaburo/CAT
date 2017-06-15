@@ -1,0 +1,26 @@
+.big-heading {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 80px;
+  letter-spacing: .025em;
+  color: $color-main;
+  font-family: $BebasNeue;
+  font-weight: 700;
+
+  @include screen(tablet, max) {
+    font-size: 48px;
+  }
+
+  &_padded {
+    padding: 50px 0 110px;
+
+    @include screen(tablet, max) {
+      padding: 60px 0;
+    }
+  }
+
+  &_left {
+    text-align: left;
+  }
+}

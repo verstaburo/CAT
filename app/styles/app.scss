@@ -12,4 +12,9 @@ body {
   flex-direction: column;
   position: relative;
   min-height: 100vh;
+  color: $color-darkgrey;
+}
+
+main {
+  clear: left;
 }

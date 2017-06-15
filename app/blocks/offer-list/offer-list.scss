@@ -1,0 +1,36 @@
+.offer-list {
+  display: block;
+  max-width: 280px;
+
+  &__item {
+    padding-left: 37px;
+    font-family: $PfDin;
+    font-size: 18px;
+    letter-spacing: .05em;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+
+    &::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $color-main;
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 40px;
+
+      @include screen(tablet,max) {
+        margin-top: 24px;
+      }
+    }
+
+    @include screen(tablet,max) {
+      font-size: 15px;
+      letter-spacing: .075em;
+      padding-left: 30px;
+    }
+  }
+}

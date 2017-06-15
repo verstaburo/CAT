@@ -1,8 +1,15 @@
+include ../icon/icons
+include ../big-heading/big-heading
+
 mixin menu(data)
-  +b.UL.menu&attributes(attributes)
-    each item in data
-      +e.LI.item
-        +e.A(href=item.path).link= item.title
+  +b.menu&attributes(attributes)
+    +e.mobile-logo
+      +icon('logonotext')
+    +big-heading().__heading Меню
+    +e.UL.items
+      each item in data
+        +e.LI.item
+          +e.A(href=item.path).link= item.title
 
 mixin burger()
   +b.BUTTON.burger&attributes(attributes)
