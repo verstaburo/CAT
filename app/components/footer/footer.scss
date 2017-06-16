@@ -41,7 +41,7 @@
 
         &:not(:first-of-type) {
           @include screen(phablet, min) {
-            margin-left: 50px;
+            margin-left: 55px;
           }
         }
       }

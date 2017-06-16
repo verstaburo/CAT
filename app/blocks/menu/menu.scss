@@ -28,7 +28,7 @@
     }
 
     @include screen(tablet, max) {
-      padding: 92px 0 28px;
+      padding: 96px 0 30px;
     }
   }
 
@@ -48,6 +48,7 @@
 
     width: 80px;
     height: 30px;
+    margin-left: -2px;
 
     svg {
       display: block;
@@ -70,7 +71,7 @@
       }
 
       @include screen(desktop, min) {
-        margin-left: 70px;
+        margin-left: 65px;
       }
     }
   }
@@ -89,6 +90,7 @@
       color: $color-dark;
       text-align: center;
       font-size: 15px;
+      letter-spacing: .05em;
     }
 
     &:hover {

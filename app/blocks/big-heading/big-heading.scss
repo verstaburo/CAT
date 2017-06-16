@@ -4,6 +4,7 @@
   text-align: center;
   font-size: 80px;
   letter-spacing: .025em;
+  line-height: 1;
   color: $color-main;
   font-family: $BebasNeue;
   font-weight: 700;
@@ -22,5 +23,10 @@
 
   &_left {
     text-align: left;
+  }
+
+  &_huge {
+    font-size: 90px;
+    letter-spacing: .03em;
   }
 }

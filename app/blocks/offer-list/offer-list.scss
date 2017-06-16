@@ -7,6 +7,7 @@
     font-family: $PfDin;
     font-size: 18px;
     letter-spacing: .05em;
+    line-height: 1.444;
     color: #fff;
     position: relative;
     text-transform: uppercase;
@@ -20,10 +21,10 @@
     }
 
     &:not(:first-of-type) {
-      margin-top: 40px;
+      margin-top: 33px;
 
       @include screen(tablet,max) {
-        margin-top: 24px;
+        margin-top: 18px;
       }
     }
 
@@ -31,6 +32,7 @@
       font-size: 15px;
       letter-spacing: .075em;
       padding-left: 30px;
+      line-height: 1.333;
     }
   }
 }
