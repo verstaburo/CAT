@@ -11,21 +11,9 @@
   &_main {
     background-color: transparent;
 
-    .menu {
-      @include screen(tablet-wide, min) {
-        width: 100%;
-      }
-
-      @include screen(tablet, min) {
-        margin-left: auto;
-        padding-left: 90px;
-      }
-
-      &__item:nth-of-type(4) {
-        @include screen(tablet-wide, min) {
-          margin-left: auto;
-        }
-      }
+    .logo {
+      width: 92px;
+      height: 72px;
     }
   }
 

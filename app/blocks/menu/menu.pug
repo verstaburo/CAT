@@ -3,13 +3,18 @@ include ../big-heading/big-heading
 
 mixin menu(data)
   +b.menu&attributes(attributes)
-    +e.mobile-logo
-      +icon('logonotext')
+    +e.mobile-controls
+      +logonotext()
+      +burger()._close
     +big-heading().__heading Меню
     +e.UL.items
       each item in data
-        +e.LI.item
-          +e.A(href=item.path).link= item.title
+        if item.active
+          +e.LI.item._active
+            +e.A(href=item.path).link= item.title
+        else
+          +e.LI.item
+            +e.A(href=item.path).link= item.title
 
 mixin burger()
   +b.BUTTON.burger&attributes(attributes)

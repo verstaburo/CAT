@@ -16,7 +16,8 @@ block head
   - var pageTitle = 'CAT - Главная'
 
 block header
-  +header()._main
+  - var data = getData('main-menu')
+  +header(data, true)
 
 block content
   +full-bg('assets/images/background/main.jpg')._overlay._overlay_left._overlay_85
@@ -27,7 +28,7 @@ block content
       +text()._light._white
         p Перевозка крупногабаритных и тяжеловесных грузов, услуги грузоподъемной техники, сервисное обслуживание   спецтехники.
       +action() заказать услугу
-      +input({name:'test', placeholder:'Имя'})
+      //- +input({name:'test', placeholder:'Имя'})._white
       //- +contact-text()
       //- +list(getData('offer-list').cities)._cities
     +e.scroll

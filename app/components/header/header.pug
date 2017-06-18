@@ -2,9 +2,16 @@ include ../../blocks/container/container
 include ../../blocks/logo/logo
 include ../../blocks/menu/menu
 
-mixin header()
-  +b.HEADER.header&attributes(attributes)
-    +container()
-      +logo()
-      +menu(getData('main-menu')).__menu
-      +burger().__burger
+mixin header(data, main)
+  if main
+    +b.HEADER.header&attributes(attributes)._main
+      +container()
+        +logo()
+        +menu(data)._main
+        +burger()._white.__burger
+  else
+    +b.HEADER.header&attributes(attributes)
+      +container()
+        +logo()
+        +menu(data).__menu
+        +burger().__burger
