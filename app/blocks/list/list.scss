@@ -1,0 +1,61 @@
+.list {
+  display: block;
+
+  &_offer {
+    max-width: 280px;
+
+    .list {
+
+      &__item {
+        padding-left: 37px;
+
+        &::before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: $color-main;
+        }
+
+        &:not(:first-of-type) {
+          margin-top: 33px;
+
+          @include screen(tablet,max) {
+            margin-top: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  &_cities {
+    max-height: 265px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .list__item {
+
+      &:not(:nth-of-type(5n)) {
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+  &__item {
+    font-family: $PfDin;
+    font-size: 18px;
+    letter-spacing: .05em;
+    line-height: 1.444;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+
+    @include screen(tablet,max) {
+      font-size: 15px;
+      letter-spacing: .075em;
+      padding-left: 30px;
+      line-height: 1.333;
+    }
+  }
+}

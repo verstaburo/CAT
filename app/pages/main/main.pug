@@ -7,7 +7,10 @@ include ../../blocks/scroll/scroll
 include ../../blocks/big-heading/big-heading
 include ../../blocks/text/text
 include ../../blocks/action/action
-include ../../blocks/offer-list/offer-list
+include ../../blocks/list/list
+include ../../blocks/map/map
+include ../../blocks/contact-text/contact-text
+include ../../blocks/input/input
 
 block head
   - var pageTitle = 'CAT - Главная'
@@ -17,14 +20,16 @@ block header
 
 block content
   +full-bg('assets/images/background/main.jpg')._overlay._overlay_left._overlay_85
-  +b.MAIN.main.container
-    +pagination(1, 4).__pagination
+  +b.MAIN.main
     +container()
+      +pagination(1, 4).__pagination
       +big-heading()._left._huge Полный спектр <br> услуг спецтехники
       +text()._light._white
         p Перевозка крупногабаритных и тяжеловесных грузов, услуги грузоподъемной техники, сервисное обслуживание   спецтехники.
       +action() заказать услугу
-      +offer-list(getData('offer-list').services)
+      +input({name:'test', placeholder:'Имя'})
+      //- +contact-text()
+      //- +list(getData('offer-list').cities)._cities
     +e.scroll
       +scroll()
 

@@ -1,0 +1,3 @@
+mixin input(data)
+  +b.INPUT(type=data.type||'text',name=data.name,value=data.value||false,placeholder=data.placeholder||false).input&attributes(attributes)
+    block

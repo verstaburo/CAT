@@ -4,6 +4,10 @@
   flex-grow: 1;
   position: relative;
 
+  .container {
+    position: relative;
+  }
+
   &__pagination {
     position: absolute;
     transform: translateY(-50%);
