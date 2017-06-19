@@ -1,0 +1,9 @@
+mixin main-slide()
+  +b.main-slide&attributes(attributes)
+    block
+
+mixin slide-bg(img)
+  +e.slide-bg&attributes(attributes)
+    if img
+      img(src='assets/images/background/'+img)
+    block

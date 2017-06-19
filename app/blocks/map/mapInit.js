@@ -12,7 +12,7 @@ export default () => {
     // eslint-disable-next-line no-new
     const mapFrame = new googleMaps.Map(mapElement, {
       zoom: 17,
-      center: location,
+      center: { lat: 48.466058, lng: 135.176531 },
       mapTypeId: googleMaps.MapTypeId.ROADMAP,
       scrollwheel: false,
       disableDefaultUI: true,

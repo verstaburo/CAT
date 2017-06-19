@@ -30,6 +30,7 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
     &_padded {
       padding-top: 106px;
@@ -96,18 +97,26 @@
   // Модификатор для главной страницы
 
   &_main {
-    padding: 31px 0 40px;
+    padding-bottom: 40px;
+    padding-top: 0;
     background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
 
     .container {
       display: flex;
       justify-content: space-between;
-      padding: 0 20px !important;
+
+      @include screen(tablet,max) {
+        padding: 0 20px !important;
+      }
     }
 
     .footer {
       @include screen(tablet, max) {
-        padding: 20px 0;
+        padding-bottom: 20px;
       }
 
       &__text-item {

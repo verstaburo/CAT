@@ -14,10 +14,10 @@
   }
 
   &_padded {
-    padding: 50px 0 110px;
+    padding: 0 0 110px;
 
     @include screen(tablet, max) {
-      padding: 60px 0;
+      padding: 18px 0 23px;
     }
   }
 

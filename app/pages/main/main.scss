@@ -4,8 +4,21 @@
   flex-grow: 1;
   position: relative;
 
-  .container {
-    position: relative;
+  &__cities {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0;
+    z-index: -1;
+
+    @include transition(opacity, z-index);
+
+    &_active {
+      opacity: 1;
+      z-index: 4;
+    }
   }
 
   &__pagination {
@@ -23,14 +36,11 @@
     }
   }
 
-  &__center {
-    width: 685px;
-    margin: 0 auto;
-  }
-
-  &__scroll {
-    margin-top: auto;
-    margin-left: 53%;
-    padding-top: 20px;
+  &__controls {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 100%;
   }
 }

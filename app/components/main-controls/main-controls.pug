@@ -1,0 +1,9 @@
+include ../../blocks/left-toggler/left-toggler
+include ../../blocks/pagination/pagination
+include ../../blocks/container/container
+
+mixin main-controls()
+  +b.main-controls&attributes(attributes)
+    +container
+      +left-toggler()
+      +pagination(1,4).__pagination

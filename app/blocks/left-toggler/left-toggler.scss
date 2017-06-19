@@ -1,0 +1,33 @@
+.left-toggler {
+  display: inline-block;
+  background-color: transparent;
+  position: relative;
+  transform: translate(-50%, 50%) translateZ(0);
+
+  &_active {
+
+    .left-toggler__item_hide { display: block; }
+    .left-toggler__item_show { display: none; }
+  }
+
+  &__item {
+    font-size: 17px;
+    font-family: $PfDin;
+    color: #fff;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    transform: rotate(-90deg);
+    transform-origin: top;
+
+    &:hover {
+      color: $color-main;
+    }
+
+    &_hide {
+      color: $color-main;
+      display: none;
+    }
+  }
+}
