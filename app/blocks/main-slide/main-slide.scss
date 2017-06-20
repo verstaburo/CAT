@@ -26,10 +26,13 @@
   }
 
   &__col {
-    flex-basis: 50%;
     box-sizing: content-box;
 
     &_w {
+
+      &_685 {
+        flex-basis: 685px;
+      }
 
       &_500 {
         flex-basis: 500px;
@@ -43,6 +46,8 @@
     &_left {
       padding-left: 173px;
       margin-top: 47px;
+      flex-basis: 50%;
+      box-sizing: border-box;
 
       .big-heading {
         max-width: 370px;
@@ -51,7 +56,8 @@
 
     &_right {
       padding-left: 120px;
-      flex-basis: auto;
+      flex-basis: 50%;
+      box-sizing: border-box;
     }
 
     &_center {

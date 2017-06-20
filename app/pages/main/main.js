@@ -26,6 +26,4 @@ export default () => { // eslint-disable-next-line
     $('.main-slide__contact-form').removeClass('main-slide__contact-form_disabled');
     $('.contact-text').removeClass('contact-text_active');
   });
-
-  // document.getElementById('pagepiling').pagepiling();
 };

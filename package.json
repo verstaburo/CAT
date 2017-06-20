@@ -58,6 +58,7 @@
     "load-google-maps-api": "^1.0.0",
     "normalize.css": "^6.0.0",
     "object-fit-images": "^3.2.3",
+    "pagepiling.js": "^1.5.4",
     "postcss-discard-comments": "^2.0.4",
     "postcss-reporter": "^3.0.0",
     "postcss-scss": "^0.4.1",
