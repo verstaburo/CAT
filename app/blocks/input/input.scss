@@ -11,6 +11,10 @@
 
   &_white {
     color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
   }
 
   @include screen(tablet,max) {

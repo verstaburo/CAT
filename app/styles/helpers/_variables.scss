@@ -15,7 +15,7 @@ $color-main: #fc9a00; // Основной цвет сайта
 $color-dark: #1b1b21;
 $color-darkgrey: #4a4a53;
 $color-grey: #74747d;
-$color-placeholder: #fff; // Основной цвет для placeholder
+$color-placeholder: $color-dark; // Основной цвет для placeholder
 $color-input: black; // Основной цвет input, select и textarea
 
 // ##########

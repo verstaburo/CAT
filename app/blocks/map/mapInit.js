@@ -20,7 +20,6 @@ export default () => {
     // eslint-disable-next-line no-new
     const marker = new googleMaps.Marker({
       position: location,
-      title: 'Hello World!',
       icon: image,
     });
     marker.setMap(mapFrame);

@@ -1,11 +1,8 @@
-mixin pagination(active, max)
+mixin pagination()
   +b.pagination&attributes(attributes)
-    if (active<10)
-      +e.SPAN.number= '0'+active
-    else
-      +e.SPAN.number= active
+    +e.SPAN.number 01
     +e.dots
-      - for (var i=0;i<active;i++)
-          +e.A(href='#').dot._active
-      - for (;i<max;i++)
-          +e.A(href='#').dot
+      +e.A(href='#main').dot._active
+      +e.A(href='#services').dot
+      +e.A(href='#park-technics').dot
+      +e.A(href='#contacts').dot

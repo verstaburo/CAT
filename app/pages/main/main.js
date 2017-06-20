@@ -1,4 +1,4 @@
-import $ from 'jquery';
+const $ = window.$;
 
 export default () => { // eslint-disable-next-line
   $('.left-toggler__item_show').click(function (e) {

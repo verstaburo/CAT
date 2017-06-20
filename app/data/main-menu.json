@@ -1,9 +1,9 @@
 [{
   "title": "Услуги",
-  "path": "#"
+  "path": "#services"
 }, {
   "title": "Парк техники",
-  "path": "#"
+  "path": "#park-technics"
 }, {
   "title": "Проекты",
   "path": "#"
@@ -12,5 +12,5 @@
   "path": "#"
 }, {
   "title": "Контакты",
-  "path": "#"
+  "path": "#contacts"
 }]
