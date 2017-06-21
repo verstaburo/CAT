@@ -16,13 +16,16 @@
 <body>
     <header class="header">
         <div class="container">
-            <a class="logo" href="#">
+            <a class="logo header__desktop" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.99 64.55">
                     <path d="M8.28 4.56a1.35 1.35 0 0 0-1.36-1.35H4.84a1.39 1.39 0 0 0-1.36 1.35v24.8a1.35 1.35 0 0 0 1.36 1.35h2.08a1.35 1.35 0 0 0 1.36-1.36v-5.14h3.2v5.18a4.55 4.55 0 0 1-4.56 4.52H4.84a4.58 4.58 0 0 1-4.51-4.56V4.56A4.58 4.58 0 0 1 4.84 0h2.08a4.55 4.55 0 0 1 4.55 4.55v3.78H8.28zm31.96 19.37l-1.4 10h-3.25L37.38 21h8.18L43.2 3.15h-.24l-2 15.35h-3.2L40.19 0h5.76l3.25 23.92zm9.25 2.47l1.07 7.51h-3.23l-1.11-7.51zM81.07 3.21v30.7h-3.2V3.21h-3.92V0h11v3.21z"
                         fill="#fc9a00"></path>
                     <path d="M5.04 54.55v1H3.85v-1.06c0-1-.4-1.62-1.31-1.62s-1.31.61-1.31 1.62v5.92c0 1 .42 1.62 1.31 1.62s1.31-.61 1.31-1.62v-1.46h1.19v1.39c0 1.7-.8 2.82-2.53 2.82S0 62.04 0 60.35v-5.8c0-1.7.8-2.82 2.51-2.82s2.53 1.13 2.53 2.82zm2.7-1.57v10.07H6.49v-11.2h5.25v11.2h-1.25V52.98zm9.59 3.83v1.12h-2.74v4h3.36v1.14h-4.62V51.85h4.61v1.14h-3.35v3.82zm7.08 7.75v-1.5h-4.88V51.85h1.23v10.07h2.75V51.85h1.26v10.1h.85v2.61zm3.92-3.77l-.43 2.26h-1.2l2.14-11.2h1.81l2.15 11.2h-1.25l-.43-2.26zm.16-1.07h2.5l-1.31-6.51zm8.12-7.87c1.75 0 2.43.83 2.43 2.48v.53c0 1.18-.34 1.92-1.31 2.23 1.09.3 1.5 1.17 1.5 2.4v.94a2.3 2.3 0 0 1-2.56 2.63h-2.58V51.85zm-.28 4.75c1 0 1.5-.32 1.5-1.49v-.66c0-1-.34-1.47-1.23-1.47h-1.27v3.62zm.37 5.31c.91 0 1.33-.48 1.33-1.52v-1c0-1.25-.5-1.66-1.57-1.66h-1.13v4.18zm5.7 1.14V52.98h-2.07v-1.13h5.38v1.14h-2.06v10.06zm4.46-8.5c0-1.71.85-2.82 2.56-2.82S52 52.83 52 54.55v5.79c0 1.7-.85 2.82-2.58 2.82s-2.56-1.12-2.56-2.82zm1.23 5.86c0 1 .43 1.62 1.33 1.62s1.33-.59 1.33-1.62v-5.92c0-1-.42-1.62-1.33-1.62s-1.33.61-1.33 1.62zm7.12 2.64V52.98h-2.06v-1.13h5.38v1.14h-2.07v10.06zm7.01-11.2c1.76 0 2.51 1 2.51 2.74v1.34c0 1.78-.83 2.71-2.61 2.71h-1.1v4.42h-1.25V51.85zm-.1 5.67c.93 0 1.38-.43 1.38-1.5v-1.5c0-1-.37-1.54-1.28-1.54h-1.2v4.53zm5.21 3.27l-.43 2.26h-1.19l2.14-11.2h1.81l2.15 11.2h-1.25l-.43-2.26zm.16-1.07h2.5l-1.31-6.51zm6.84-1.71v5H73.1V51.85h1.23v5h2.75v-5h1.25v11.2H77.1v-5zm10.56-3.46v1h-1.18v-1.06c0-1-.4-1.62-1.31-1.62s-1.31.61-1.31 1.62v5.92c0 1 .42 1.62 1.31 1.62s1.31-.61 1.31-1.62v-1.46h1.18v1.39c0 1.7-.8 2.82-2.53 2.82s-2.51-1.12-2.51-2.82v-5.79c0-1.7.8-2.82 2.51-2.82s2.53 1.13 2.53 2.82z"
                         fill="#aaabb2"></path>
                 </svg>
+            </a>
+            <a class="logo logo_notext header__mobile" href="#">
+                <svg><use xlink:href="assets/images/icon.svg#icon_logonotext"></use></svg>
             </a>
             <div class="menu header__menu">
                 <div class="menu__mobile-controls">
@@ -53,7 +56,395 @@
             <button class="burger header__burger"></button>
         </div>
     </header>
-    <div class="park-technics"></div>
+    <main class="page-wrap container" role="main">
+        <h1 class="big-heading page-wrap__heading">парк техники</h1>
+        <div class="park-technics">
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/1.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Автокран</span>
+                    <span class="product-preview__title">Terex Demag AC 350/6</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/2.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Автокран</span>
+                    <span class="product-preview__title">Liebherr ltm 1220-5.2</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/3.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Автокран</span>
+                    <span class="product-preview__title">TAdano faun atf 90g-4</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/4.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Автокран</span>
+                    <span class="product-preview__title">Terex Demag AC 350/6</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/5.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Кран пневмоколесный</span>
+                    <span class="product-preview__title">Terex rt 555-1</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/6.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Автокран</span>
+                    <span class="product-preview__title">Terex ac 40/2l</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/7.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Кран гусеничный</span>
+                    <span class="product-preview__title">Fuwa quy90</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/8.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Кран гусеничный</span>
+                    <span class="product-preview__title">Fuwa quy80a</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/9.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Кран гусеничный</span>
+                    <span class="product-preview__title">haulotte ha 41 px</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/10.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Тягач</span>
+                    <span class="product-preview__title">man tgx 41.680</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/11.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Тягач</span>
+                    <span class="product-preview__title">Mercedes-benz actros 3355s</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/12.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Тягач</span>
+                    <span class="product-preview__title">Man tgs 33.480</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/13.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Трал телескоп</span>
+                    <span class="product-preview__title">nooteboom euro 107-24</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/14.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Трал телескоп</span>
+                    <span class="product-preview__title">Goldhofer stz 9</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/15.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Балластовоз</span>
+                    <span class="product-preview__title">nooteboom 102-06</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-preview park-technics__product">
+                <div class="product-preview__image-wrap">
+                    <img src="assets/images/park-technics/16.png" />
+                    <div class="product-preview__description">
+                        <p>Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
+                    </div>
+                </div>
+                <div class="product-preview__info">
+                    <span class="product-preview__type">Прицеп-платформа</span>
+                    <span class="product-preview__title">Faymonville stz 5</span>
+                    <div class="product-preview__actions">
+                        <div class="small-action small-action_icon-hover">
+                            <svg class="small-action__icon-plus">
+                                <line x1="7" x2="7" y1="0" y2="14"></line>
+                                <line x1="0" x2="14" y1="7" y2="7"></line>
+                            </svg>
+                            <span class="small-action__text">Заказать</span>
+                        </div>
+                        <div class="small-action product-preview__mobile">
+                            <span class="small-action__text">Характеристики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__row">
