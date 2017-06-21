@@ -11,6 +11,7 @@
 
   @include screen(tablet, max) {
     font-size: 48px;
+    letter-spacing: .03em;
   }
 
   &_padded {

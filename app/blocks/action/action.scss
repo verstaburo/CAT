@@ -18,7 +18,6 @@
 
   &__link {
     text-decoration: none;
-    font-family: $PfDin;
     font-size: 17px;
     color: #fff;
     letter-spacing: .075em;
@@ -30,6 +29,55 @@
 
     @include screen(tablet, max) {
       font-size: 15px;
+    }
+  }
+}
+
+.small-action {
+  display: flex;
+  align-items: center;
+
+  &__icon-plus {
+    stroke: $color-main;
+    stroke-width: 2px;
+    width: 14px;
+    height: 14px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: $color-main;
+  }
+
+  &_icon-hover {
+
+    .small-action {
+
+      &__text {
+        @include screen(tablet, min) {
+          opacity: 0;
+          pointer-events: none;
+
+          @include transition(opacity);
+        }
+      }
+
+      &__icon-plus {
+
+        &:hover {
+          @include screen(tablet, min) {
+
+            & + .small-action__text {
+              opacity: 1;
+              pointer-events: all;
+            }
+          }
+        }
+      }
     }
   }
 }

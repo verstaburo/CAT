@@ -1,11 +1,10 @@
 .header {
   display: block;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding: 40px 0;
 
   @include screen(tablet, max) {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   &_main {
@@ -33,5 +32,17 @@
 
   &__burger {
     margin-top: 5px;
+  }
+
+  &__desktop {
+    @include screen(tablet, max) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    @include screen(tablet, min) {
+      display: none;
+    }
   }
 }

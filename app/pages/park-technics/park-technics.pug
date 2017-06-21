@@ -1,6 +1,10 @@
 extends ../../layouts/default
 include ../../components/header/header
 include ../../components/footer/footer
+include ../../blocks/big-heading/big-heading
+include ../../blocks/container/container
+include ../../blocks/product-preview/product-preview
+include ../../blocks/page-wrap/page-wrap
 
 block head
   - var pageTitle = 'CAT - Парк техники'
@@ -12,7 +16,14 @@ block header
   +header(data)
 
 block content
-  +b.park-technics
+  +page-wrap()
+    +big-heading().__heading парк техники
+    +b.park-technics
+      - var i = 1
+      each item in getData('park-technics')
+        - item.img = 'assets/images/park-technics/'+i+'.png'
+        +product-preview(item).__product
+        - i++
 
 block footer
   +footer()

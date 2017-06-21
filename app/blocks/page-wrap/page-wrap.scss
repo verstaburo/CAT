@@ -1,0 +1,15 @@
+.page-wrap {
+  padding: 0 45px;
+
+  @include screen(tablet, max) {
+    padding-top: 32px !important;
+  }
+
+  &__heading {
+    margin-bottom: 90px;
+
+    @include screen(tablet, max) {
+      margin-bottom: -8px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+include ../action/action
+
+mixin product-preview(data)
+  +b.product-preview&attributes(attributes)
+    +e.image-wrap
+      img(src=data.img)
+      +e.description
+        p Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.
+    +e.info
+      +e.SPAN.type= data.type
+      +e.SPAN.title= data.title
+      +e.actions
+        +small-action-icon() Заказать
+        +small-action().__mobile
+          +small-action-text() Характеристики

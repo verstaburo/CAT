@@ -1,3 +1,19 @@
 .park-technics {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1065px;
+
+  @include screen(desktop-wide, max) {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  &__product {
+    margin-bottom: 98px;
+
+    @include screen(tablet,max) {
+      margin-bottom: 42px;
+    }
+  }
 }

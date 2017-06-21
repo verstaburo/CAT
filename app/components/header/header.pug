@@ -12,6 +12,7 @@ mixin header(data, main)
   else
     +b.HEADER.header&attributes(attributes)
       +container()
-        +logo()
+        +logo().__desktop
+        +logonotext().__mobile
         +menu(data).__menu
         +burger().__burger
