@@ -25,14 +25,14 @@ block content
     +main-controls().__controls
     +main-slide().__cities
       +slide-bg._full
-      +container()
+      +container().container_static
         +e.row
           +e.col._center._w_full
             +list(getData('offer-list').cities)._cities.__cities-list
     +e.slides#pagepiling
       +main-slide().section
         +slide-bg('main.jpg')._left._o_85
-        +container()
+        +container().container_static
           +e.row
             +e.col._center._w_685
               +big-heading()._left._huge Полный спектр услуг спецтехники
@@ -43,7 +43,7 @@ block content
             +scroll()
       +main-slide().section
         +slide-bg('services.jpg')._right._o_70
-        +container()
+        +container().container_static
           +e.row
             +e.col._left
               +big-heading()._left._huge Наши услуги
@@ -52,7 +52,7 @@ block content
               +list(getData('offer-list').services)._offer
       +main-slide().section
         +slide-bg('park-technics.jpg')._right._o_70
-        +container()
+        +container().container_static
           +e.row
             +e.col._left
               +big-heading()._left._huge Парк техники
@@ -62,7 +62,7 @@ block content
       +main-slide().section
         +slide-bg('park-technics.jpg')._full._o_90.__map
           +map().__map
-        +container()
+        +container().container_static
           +e.row
             +e.col._center._w_500.__contact-form
               +big-heading()._left._huge Контакты

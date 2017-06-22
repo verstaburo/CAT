@@ -1,9 +1,14 @@
 .container {
-  margin: 0 auto;
-  width: $container-width;
+  width: 100%;
+  padding: 0 5%;
 
-  @include screen(desktop-wide, max) {
-    width: 100%;
+  @include screen(tablet,max) {
     padding: 0 20px;
+  }
+
+  &_static {
+    margin: 0 auto;
+    width: $container-width;
+    padding: 0;
   }
 }

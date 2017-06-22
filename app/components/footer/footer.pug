@@ -7,7 +7,7 @@ include ../../blocks/copyright/copyright
 mixin footer(main)
   if main
     +b.FOOTER.footer._main&attributes(attributes)
-      +container()
+      +container().container_static
         +e.phones
           +e.text-item
             +e.A(href='#').text +7 924 401 73 74

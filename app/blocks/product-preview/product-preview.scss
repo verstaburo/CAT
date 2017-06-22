@@ -16,13 +16,20 @@
     &:hover {
 
       .product-preview__description {
-        opacity: 1;
-        pointer-events: all;
+        @include screen(tablet, min) {
+          opacity: 1;
+          pointer-events: all;
+        }
       }
     }
 
     img {
-      @include fill-img;
+      @include center-block;
+
+      width: 70%;
+      height: 80%;
+      object-fit: contain;
+      filter: grayscale(1) sepia(36%) brightness(90%) contrast(123%);
     }
   }
 

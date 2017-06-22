@@ -15,9 +15,8 @@
     z-index: 10;
     padding-bottom: 0;
 
-    .logo {
-      width: 92px;
-      height: 72px;
+    .menu {
+      padding-right: 0;
     }
   }
 
@@ -44,5 +43,10 @@
     @include screen(tablet, min) {
       display: none;
     }
+  }
+
+  &__menu {
+    padding-right: 35px;
+    padding-left: 20px;
   }
 }

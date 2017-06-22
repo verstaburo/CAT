@@ -2,14 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1065px;
+  padding-left: 45px;
+  padding-right: 116px;
 
-  @include screen(desktop-wide, max) {
-    width: 100%;
+  @include screen(desktop,max) {
     justify-content: space-around;
+    padding: 0;
   }
 
   &__product {
+    max-width: 450px;
     margin-bottom: 98px;
 
     @include screen(tablet,max) {

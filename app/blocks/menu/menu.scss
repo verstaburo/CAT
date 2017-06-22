@@ -1,7 +1,5 @@
 .menu {
   transition: opacity .4s ease-in-out, z-index .4s ease-in-out;
-  padding-right: 85px;
-  padding-left: 20px;
   flex-grow: 1;
 
   @include screen(tablet-wide, max) {
@@ -117,16 +115,8 @@
   }
 
   &_main {
-    padding-right: 0;
-
     @include screen(tablet-wide, min) {
-      width: 100%;
       padding-left: 90px;
-    }
-
-    @include screen(tablet, min) {
-      margin-left: auto;
-      padding-left: 0;
     }
 
     .menu {
