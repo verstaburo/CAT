@@ -1,6 +1,7 @@
 .input {
   display: block;
   width: 100%;
+  font-family: $PfDin;
   font-size: 17px;
   color: $color-dark;
   letter-spacing: .05em;
@@ -8,17 +9,26 @@
   background-color: transparent;
   border-bottom: 1px solid rgba(101, 101, 106, .4);
 
+  @include screen(tablet,max) {
+    font-size: 15px;
+    line-height: 3.2;
+  }
+
+  &_medium {
+    font-weight: 500;
+    line-height: 1.95;
+
+    @include screen(tablet, max) {
+      line-height: 2.4;
+    }
+  }
+
   &_white {
     color: #fff;
 
     &::placeholder {
       color: #fff;
     }
-  }
-
-  @include screen(tablet,max) {
-    font-size: 15px;
-    line-height: 3.2;
   }
 
   &::placeholder {

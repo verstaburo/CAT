@@ -1,0 +1,49 @@
+.order {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12%;
+  padding-right: 8%;
+  padding-bottom: 135px;
+
+  @include screen(tablet-wide, max) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+
+  @include screen(desktop, max) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__input {
+
+    &:not(:first-of-type) {
+      margin-top: 11px;
+
+      @include screen(tablet-wide, min) {
+        margin-top: 28px;
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+    box-sizing: content-box;
+    padding-top: 10px;
+
+    @include screen(tablet-wide, min) {
+      padding-left: 18px;
+      width: 50%;
+      padding-top: 60px;
+    }
+  }
+
+  &__button {
+    margin-top: 55px;
+
+    @include screen(tablet, max) {
+      margin-top: 35px;
+    }
+  }
+}

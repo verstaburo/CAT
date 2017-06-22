@@ -1,0 +1,30 @@
+extends ../../layouts/default
+include ../../blocks/page-wrap/page-wrap
+include ../../blocks/big-heading/big-heading
+include ../../blocks/product-preview/product-preview
+include ../../blocks/input/input
+include ../../blocks/button/button
+
+block head
+  - var pageTitle = 'CAT - страница заказа'
+
+block header
+  -
+    var data = getData('page-menu')
+    data[2].active = true
+  +header(data)
+
+block content
+  +page-wrap()
+    +big-heading() Terex demag <br> ac 350/6
+    +b.order
+      +product-details()
+      +e.form
+        +input({type: 'name', placeholder: 'имя'})._medium.__input
+        +input({type: 'email', placeholder: 'email'})._medium.__input
+        +input({type: 'tel', placeholder: 'телефон'})._medium.__input
+        +button().__button Отправить заявку
+
+
+block footer
+  +footer()

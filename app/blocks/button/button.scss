@@ -1,0 +1,27 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  background-color: $color-main;
+  font-family: $PfDin;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .025em;
+  color: #fff;
+  line-height: 4;
+  padding: 0 30px;
+  min-width: 225px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-main, 5%);
+  }
+
+  @include screen(tablet, max) {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

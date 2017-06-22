@@ -2,10 +2,9 @@ include ../action/action
 
 mixin product-preview(data)
   +b.product-preview&attributes(attributes)
-    +e.image-wrap
-      img(src=data.img)
+    +product-image(data)
       +e.description
-        p Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.
+        +product-description()
     +e.info
       +e.SPAN.type= data.type
       +e.SPAN.title= data.title
@@ -13,3 +12,20 @@ mixin product-preview(data)
         +small-action-icon() Заказать
         +small-action().__mobile
           +small-action-text() Характеристики
+
+mixin product-description()
+  +e.P.desc-text&attributes(attributes) Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.
+
+mixin product-image(data)
+  +e.image-wrap&attributes(attributes)
+    +e.image-overlay
+      img(src=data.img)
+    block
+
+mixin product-details()
+  +b.product-preview._col&attributes(attributes)
+    -
+      var data = {}
+      data.img = 'assets/images/park-technics/1.png'
+    +product-image(data)
+    +product-description
