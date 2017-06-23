@@ -1,9 +1,9 @@
 [{
   "title": "Услуги",
-  "path": "#services"
+  "path": "#"
 }, {
   "title": "Парк техники",
-  "path": "#park-technics"
+  "path": "park-technics.html"
 }, {
   "title": "Проекты",
   "path": "#"

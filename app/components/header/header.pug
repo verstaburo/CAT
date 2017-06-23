@@ -5,7 +5,7 @@ include ../../blocks/menu/menu
 mixin header(data, main)
   if main
     +b.HEADER.header&attributes(attributes)._main
-      +container().container_static
+      +container()
         +logo()
         +menu(data)._main
         +burger()._white.__burger

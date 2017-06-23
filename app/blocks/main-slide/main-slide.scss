@@ -3,6 +3,13 @@
   min-height: 100vh;
   padding: 160px 0 90px;
 
+  &.active {
+
+    .main-slide__slide-bg {
+      transform: scale(1.05);
+    }
+  }
+
   &__cities-list {
     margin-right: 50px;
   }
@@ -76,6 +83,7 @@
 
     z-index: -1;
     overflow: hidden;
+    transition: transform 5s cubic-bezier(.3, 0, .7, 1) .5s;
 
     &::after {
       position: absolute;

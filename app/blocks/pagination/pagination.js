@@ -24,4 +24,10 @@ export default () => {
       }
     },
   });
+
+  $.fn.pagepiling.moveSectionDown();
+
+  setTimeout(function () {
+    $.fn.pagepiling.moveSectionUp();
+  },0);
 };
