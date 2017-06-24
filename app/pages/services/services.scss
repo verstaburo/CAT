@@ -1,0 +1,46 @@
+.services {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 117px;
+
+  @include screen(tablet,max) {
+    padding-top: 60px;
+  }
+
+  @include screen(tablet-wide,max) {
+    padding-bottom: 22px;
+  }
+
+  .grid {
+    @include screen(desktop,max) {
+      margin-left: -$grid-gap/4;
+      margin-right: -$grid-gap/4;
+    }
+
+    @include screen(tablet-wide,max) {
+      flex-direction: column;
+    }
+
+    &:first-of-type {
+      @include screen(desktop,max) {
+        margin-top: -$grid-gap/2;
+      }
+    }
+
+    &__col {
+      @include screen(desktop,max) {
+        padding: $grid-gap/2 $grid-gap/4 0;
+      }
+
+      @include screen(tablet-wide,max) {
+        width: 100%;
+      }
+    }
+  }
+
+  .small-action__text {
+    @include screen(tablet,max) {
+      opacity: 0;
+    }
+  }
+}

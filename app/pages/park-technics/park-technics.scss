@@ -2,8 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 45px;
-  padding-right: 116px;
+  padding-right: 120px;
 
   @include screen(desktop,max) {
     justify-content: space-around;

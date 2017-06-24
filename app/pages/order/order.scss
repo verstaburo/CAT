@@ -1,8 +1,8 @@
 .order {
   display: flex;
   justify-content: space-between;
-  padding-left: 12%;
-  padding-right: 8%;
+  padding-left: 9%;
+  padding-right: 4%;
   padding-bottom: 135px;
 
   @include screen(tablet-wide, max) {

@@ -143,4 +143,20 @@
       display: none;
     }
   }
+
+  &__act-hover {
+
+    .small-action__icon-plus {
+
+      &:hover {
+        @include screen(tablet, min) {
+
+          & + .small-action__text {
+            opacity: 1;
+            pointer-events: all;
+          }
+        }
+      }
+    }
+  }
 }

@@ -53,30 +53,28 @@
     color: $color-main;
   }
 
-  &_icon-hover {
+  &_icon {
+
+    .small-action__text {
+      @include screen(tablet, min) {
+        opacity: 0;
+        pointer-events: none;
+
+        @include transition(opacity);
+      }
+    }
+  }
+
+  &_white {
 
     .small-action {
 
-      &__text {
-        @include screen(tablet, min) {
-          opacity: 0;
-          pointer-events: none;
-
-          @include transition(opacity);
-        }
+      &__icon-plus {
+        stroke: #fff;
       }
 
-      &__icon-plus {
-
-        &:hover {
-          @include screen(tablet, min) {
-
-            & + .small-action__text {
-              opacity: 1;
-              pointer-events: all;
-            }
-          }
-        }
+      &__text {
+        color: #fff;
       }
     }
   }

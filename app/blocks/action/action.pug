@@ -18,7 +18,7 @@ mixin small-action-text()
     block
 
 mixin small-action-icon()
-  +small-action()._icon-hover
+  +small-action()._icon&attributes(attributes)
     +icon-plus()
     +small-action-text()
       block

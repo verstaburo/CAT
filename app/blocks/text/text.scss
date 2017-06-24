@@ -16,6 +16,17 @@
     }
   }
 
+  h3 {
+    font-family: $BebasNeue;
+    font-size: 24px;
+    letter-spacing: .025em;
+
+    @include screen(tablet,max) {
+      font-size: 18px;
+      letter-spacing: .05em;
+    }
+  }
+
   p {
     line-height: 1.5;
     font-size: 16px;

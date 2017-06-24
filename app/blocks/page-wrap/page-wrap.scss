@@ -1,4 +1,6 @@
 .page-wrap {
+  padding: 0 90px;
+
   @include screen(tablet, max) {
     padding-top: 32px !important;
   }

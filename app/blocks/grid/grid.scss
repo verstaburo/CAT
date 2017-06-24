@@ -8,7 +8,9 @@ $grid-col-width: $grid-container-width/$grid-cols; // Ширина одной к
   margin-left: -$grid-gap/2;
   margin-right: -$grid-gap/2;
 
-  &:first-of-type { margin-top: -$grid-gap; }
+  &:first-of-type {
+    margin-top: -$grid-gap;
+  }
 
   &__col {
     display: inline-block; // fallback для старых браузеров
@@ -31,5 +33,9 @@ $grid-col-width: $grid-container-width/$grid-cols; // Ширина одной к
     &_thirteen { width: 13 * $grid-col-width; }
     &_fourteen { width: 14 * $grid-col-width; }
     &_fifteen { width: 15 * $grid-col-width; }
+  }
+
+  &__subgrid {
+    margin-top: 0 !important;
   }
 }

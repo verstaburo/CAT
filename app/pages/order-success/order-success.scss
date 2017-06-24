@@ -1,0 +1,38 @@
+.order-success {
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 24px;
+
+  &__text {
+    text-align: center;
+
+    &_success {
+      padding: 0 33%;
+
+      @include screen(tablet,max) {
+        padding: 0;
+      }
+
+      p {
+        letter-spacing: .05em;
+      }
+    }
+
+    &_more {
+      text-transform: uppercase;
+      padding: 42px 0 69px;
+
+      @include screen(tablet,max) {
+        padding-bottom: 22px;
+      }
+    }
+  }
+
+  .park-technics__product {
+    margin-bottom: 42px;
+
+    @include screen(tablet,max) {
+      margin-bottom: 27px;
+    }
+  }
+}

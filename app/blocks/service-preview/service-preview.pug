@@ -1,0 +1,7 @@
+include ../action/action
+
+mixin service-preview(img, title)
+  +b.A(href='#').service-preview&attributes(attributes)
+    img(src='assets/images/services/'+img+'.jpg')
+    +small-action-icon()._white.__action Подробнее
+    +e.SPAN.title= title

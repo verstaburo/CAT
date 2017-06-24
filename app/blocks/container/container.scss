@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0 45px;
 
-  @include screen(tablet,max) {
+  @include screen(tablet-wide,max) {
     padding: 0 20px;
   }
 
