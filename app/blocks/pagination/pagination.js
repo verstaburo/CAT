@@ -7,9 +7,7 @@ export default () => {
     return;
   }
 
-  if ($(window).width() > 768) {
-    $('html, body').css('overflow-y', 'hidden');
-  }
+  $('html, body').css('overflow-y', 'hidden');
 
   $('#pagepiling').pagepiling({
     anchors: ['main', 'services', 'park-technics', 'contacts'],

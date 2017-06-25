@@ -1,12 +1,12 @@
 [{
   "title": "Услуги",
-  "path": "#"
+  "path": "services.html"
 }, {
   "title": "Проекты",
-  "path": "#"
+  "path": "projects.html"
 }, {
   "title": "Парк техники",
-  "path": "#"
+  "path": "park-technics.html"
 }, {
   "title": "О компании",
   "path": "#"

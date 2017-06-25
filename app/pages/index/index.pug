@@ -1,7 +1,30 @@
 extends ../../layouts/default
+include ../../blocks/page-wrap/page-wrap
+include ../../blocks/big-heading/big-heading
+
+mixin demo(title,path)
+  +b.demo&attributes(attributes)
+    +e.A(href=path+'.html').link= title
+    +e.SPAN.title= '('+path+'.html)'
 
 block head
-  - var pageTitle = 'CAT - демонстрация страниц'
+  - var pageTitle = 'CAT - страница заказа'
+
+block header
+  +header(getData('page-menu'))
 
 block content
-  +b.index
+  +page-wrap()
+    +big-heading() Демонстрация верстки
+    +demo('01_СAT_Главная', 'main')
+    +demo('02_CAT_Парк техники', 'park-technics')
+    +demo('02_CAT_Парк техники: форма', 'order')
+    +demo('02_CAT_Парк техники: заявка отправлена', 'order-success')
+    +demo('03_САТ_Список услуг', 'services')
+    +demo('04_CAT_Услуга', 'service')
+    +demo('05_САТ_Проекты', 'projects')
+
+
+
+block footer
+  +footer()

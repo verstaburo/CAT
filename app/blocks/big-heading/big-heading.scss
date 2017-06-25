@@ -14,14 +14,6 @@
     letter-spacing: .03em;
   }
 
-  &_padded {
-    padding: 0 0 110px;
-
-    @include screen(tablet, max) {
-      padding: 18px 0 23px;
-    }
-  }
-
   &_left {
     text-align: left;
   }

@@ -1,0 +1,10 @@
+include ../action/action
+
+mixin project-preview(tag, title, img)
+  +b.project-preview&attributes(attributes)
+    +e.overlay
+      img(src='assets/images/projects/'+img+'.jpg')
+      +small-action-icon()._white.__action Увеличить
+    +e.text-block
+      +e.A(href='#').link._grey= tag
+      +e.A(href='#').link._big= title

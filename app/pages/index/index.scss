@@ -1,3 +1,27 @@
-.index {
-  display: block;
+.demo {
+  margin-top: 20px;
+
+  &:first-of-type {
+    margin-top: 70px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 70px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-main;
+
+    &:hover {
+      color: darken($color-main, 5%);
+    }
+  }
+
+  &__title {
+    font-size: 17px;
+    margin-left: 15px;
+  }
 }

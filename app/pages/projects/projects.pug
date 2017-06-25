@@ -1,0 +1,49 @@
+extends ../../layouts/default
+include ../../blocks/page-wrap/page-wrap
+include ../../blocks/big-heading/big-heading
+include ../../blocks/button/button
+include ../../blocks/project-preview/project-preview
+include ../../blocks/grid/grid
+
+block head
+  - var pageTitle = 'CAT - проекты'
+
+block header
+  -
+    var data = getData('page-menu')
+    data[1].active = true
+  +header(data)
+
+block content
+  +page-wrap()
+    +big-heading().__heading Выполненные <br>проекты
+    +b.projects
+      - var i = 0
+      +grid()
+        +col(6)
+          +project-preview('негабаритные перевозки', 'Перевозка автокрана Kato 65 тонн из Хабаровска в Комсомольск-на-Амуре', ++i)._big
+        +col(3)
+          +project-preview('Услуги грузоподъемных механизмов', 'Демонтаж башенного крана', ++i)
+        +col(3)
+          +project-preview('негабаритные перевозки', 'Перевозка колонны 86 тонн', ++i)
+        +col(6)
+          +project-preview('Услуги грузоподъемных механизмов', 'Оказание услуг кранами при строительстве Сахалинской ГРЭС-2', ++i)._big
+        +col(3)
+          +project-preview('Услуги грузоподъемных механизмов', 'Монтаж печи', ++i)
+        +col(3)
+          +project-preview('Услуги грузоподъемных механизмов', 'Монтаж колонны массой 86 тонн ', ++i)
+        +col(6)
+          +project-preview('Услуги грузоподъемных механизмов', 'Строительство блока переработки сырья битумной установки', ++i)._big
+        +col(3)
+          +project-preview('Услуги грузоподъемных механизмов', 'Монтаж котельной на крышу дома', ++i)
+        +col(3)
+          +project-preview('негабаритные перевозки', 'Перевозка колонны длиной 38 метров', ++i)
+        +col(6)
+          +project-preview('негабаритные перевозки', 'Перевозка буровой установки из Хабаровска во Владивосток', ++i)._big
+      +button().__button показать еще
+
+
+
+
+block footer
+  +footer()

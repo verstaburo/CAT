@@ -1,18 +1,14 @@
 .contact-text {
   display: block;
+  z-index: 5;
+  position: relative;
+  pointer-events: all;
 
   &_active {
 
     .contact-text {
 
-      &__text {
-        font-size: 14px;
-      }
-
       &__toggler {
-        font-size: 15px;
-        line-height: 1.8;
-        margin-top: 0;
 
         &_show {
           display: none;
