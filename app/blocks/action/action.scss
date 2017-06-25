@@ -44,6 +44,8 @@
     height: 14px;
     margin-right: 15px;
     cursor: pointer;
+
+    @include transition(stroke);
   }
 
   &__text {

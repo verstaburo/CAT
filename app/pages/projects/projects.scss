@@ -1,0 +1,26 @@
+.projects {
+  display: block;
+  padding-bottom: 77px;
+
+  @include screen(tablet,max) {
+    padding-top: 66px;
+  }
+
+  &__button {
+    margin: 73px auto 0;
+
+    @include screen(tablet,max) {
+      display: none;
+    }
+  }
+
+  .grid {
+
+    &__col {
+      @include screen(desktop, max) {
+        width: 100%;
+        padding-top: 35px;
+      }
+    }
+  }
+}
