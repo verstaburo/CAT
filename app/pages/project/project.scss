@@ -88,6 +88,10 @@ $article-offset-top-mobile: 120px;
     display: flex;
     flex-direction: column;
 
+    @media (min-width: 1025px) {
+      justify-content: space-between;
+    }
+
     @media (max-width: 768px) {
       &_buttons { order: 2; }
     }
@@ -128,17 +132,9 @@ $article-offset-top-mobile: 120px;
   }
 
   &__contacts {
-    max-width: 117px;
+    margin-top: 40px;
 
     &-heading { margin-bottom: 28px; }
-
-    @media (min-width: 1025px) {
-      margin-top: auto;
-    }
-
-    @media (max-width: 1070px) {
-      margin-top: 40px;
-    }
 
     @media (max-width: 768px) {
       margin-top: 54px;
