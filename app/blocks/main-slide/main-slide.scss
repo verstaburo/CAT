@@ -180,11 +180,15 @@
   }
 
   &__contact-form {
+    z-index: 5;
+    position: relative;
+    pointer-events: all;
+
     @include transition(opacity);
 
     &_disabled {
       opacity: 0;
-      pointer-events: 0;
+      pointer-events: none;
     }
   }
 }
