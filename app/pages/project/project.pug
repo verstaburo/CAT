@@ -1,0 +1,58 @@
+extends ../../layouts/default
+include ../../components/header/header
+include ../../components/footer/footer
+include ../../blocks/pagination-btn/pagination-btn
+include ../../blocks/page-wrap/page-wrap
+include ../../blocks/action/action
+include ../../blocks/text/text
+
+block head
+  - var pageTitle = 'CAT - Проект'
+
+block header
+  -
+    var data = getData('page-menu')
+    data[1].active = true
+  +header(data)
+
+block content
+  +page-wrap.page-wrap_padding_left
+    +b.project
+      +e.row
+        +e.A(href='#').picture
+          +e.IMG.image(src='assets/images/project/logistic.jpg' alt='')
+          +small-action-icon()._white.__action Подробнее
+
+        +e.UL.info._desktop
+          li Негабаритные перевозки
+          li такелажные работы
+          li Логистические услуги
+
+      +e.row
+        +e.col._buttons
+          +e.buttons
+            +pagination-btn._grey._prev Предыдущий проект
+            +pagination-btn._orange Следующий проект
+
+          +text.__contacts
+            p.project__contacts-heading Телефоны наших специалистов:
+            p <b>+7 914 408 73 14</b>
+            p <b>+7 924 401 73 74</b>
+
+        +e.ARTICLE.article
+          +e.H1.heading Перевозка автокрана Kato 65 тонн из Хабаровска в Комсомольск-на-Амуре
+
+          +e.content
+            +text
+              p
+                | Для негабаритных перевозок требуется спецтехника, опыт и знание, как правильно организовать работу со сложными грузами.
+                | В компании Спецавтосервис (ООО «САТ») вы найдете комплексный подход к задаче, полный список услуг,
+                | который избавляет заказчика от проблем с погрузкой, перемещением и оформлением документов.
+
+            +e.UL.info._mobile
+              li Негабаритные перевозки
+              li такелажные работы
+              li Логистические услуги
+
+block footer
+  +footer()
