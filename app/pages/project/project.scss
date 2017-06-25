@@ -12,14 +12,22 @@ $article-offset-top-mobile: 120px;
   &__picture {
     position: relative;
     display: block;
-    width: 790px;
-    height: 532px;
+    min-width: 790px;
+    width: 68.38%;
+    min-height: 532px;
+    height: auto;
+    overflow: hidden;
+
+    @media (max-width: 1070px) {
+      width: 100%;
+      margin-right: 80px;
+    }
 
     @media (max-width: 768px) {
       width: 100%;
-      height: 240px;
-      overflow: hidden;
+      min-height: 240px;
       z-index: 3;
+      margin-right: 0;
     }
 
     &::before {
@@ -93,7 +101,11 @@ $article-offset-top-mobile: 120px;
       padding: 80px;
       align-self: flex-end;
 
-      @media (min-width: 769px) {
+      @media (max-width: 1190px) {
+        padding: 20px;
+      }
+
+      @media (min-width: 1070px) {
         display: block;
       }
     }
@@ -101,7 +113,7 @@ $article-offset-top-mobile: 120px;
     &_mobile {
       margin-top: 43px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1069px) {
         display: block;
       }
     }
@@ -120,8 +132,12 @@ $article-offset-top-mobile: 120px;
 
     &-heading { margin-bottom: 28px; }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1025px) {
       margin-top: auto;
+    }
+
+    @media (max-width: 1070px) {
+      margin-top: 40px;
     }
 
     @media (max-width: 768px) {
@@ -137,6 +153,10 @@ $article-offset-top-mobile: 120px;
     margin-top: -$article-offset-top;
     z-index: 1;
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding: 97px 107px 51px 53px;
+    }
+
     @media (max-width: 768px) {
       margin-top: -$article-offset-top-mobile;
       margin-left: -20px;
@@ -151,6 +171,11 @@ $article-offset-top-mobile: 120px;
     font-weight: 700;
     line-height: 52px;
     margin-bottom: 53px;
+
+    @media (max-width: 1070px) {
+      font-size: 32px;
+      line-height: 42px;
+    }
 
     @media (max-width: 768px) {
       padding-right: 34px;
