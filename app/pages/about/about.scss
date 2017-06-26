@@ -209,6 +209,12 @@
       padding-right: 90px;
       flex-wrap: wrap;
 
+      @media (max-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+      }
+
       &_full {
         position: relative;
         background-color: #fff;
@@ -225,7 +231,10 @@
   &__card {
     width: 50%;
     min-height: 350px;
-    max-height: 30vh;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &__footer {
@@ -235,6 +244,12 @@
     margin-left: -90px;
     margin-top: -85px;
     z-index: 0;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 0;
+      min-height: 493px;
+    }
   }
 
   &__footer-content {
@@ -242,6 +257,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media (max-width: 768px) {
+      padding: 99px 43px 101px 40px;
+      flex-direction: column;
+    }
   }
 
   &__footer-bg {
@@ -266,5 +286,10 @@
 
   &__footer-text {
     max-width: 50%;
+
+    @media (max-width: 768px) {
+      margin-top: 48px;
+      max-width: initial;
+    }
   }
 }
