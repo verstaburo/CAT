@@ -1,0 +1,127 @@
+.about {
+  position: relative;
+  display: block;
+  clear: left;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #fc9a00;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 130px;
+    padding-right: 90px;
+    z-index: 1;
+  }
+
+  &__image {
+    position: relative;
+    width: 87%;
+    max-width: 1035px;
+    height: auto;
+    max-height: 100vh;
+    margin-left: auto;
+    z-index: 1;
+  }
+
+  &__info {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -250px;
+    width: 94%;
+    min-height: 395px;
+    padding: 40px 179px 40px 0;
+    background-color: #fff;
+
+    .text {
+      max-width: 332px;
+    }
+  }
+
+  &__heading { display: inline-block; }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+  }
+
+  &__col {
+    display: block;
+    width: 50%;
+    padding-left: 130px;
+    padding-right: 130px;
+
+    &_left {
+      background-color: #fff;
+
+      img {
+        margin-top: 106px;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &_right {
+      padding-top: 40px;
+      padding-bottom: 126px;
+      background-color: #fafafa;
+
+      .text {
+        max-width: 398px;
+        margin-top: 78px;
+
+        p {
+          display: block;
+
+          &:not(:first-child) { margin-top: 33px;}
+        }
+      }
+    }
+  }
+
+  &__right-heading {
+    margin-bottom: 36px;
+    font-family: $PfDin;
+    font-weight: 400;
+    color: #1b1b21;
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  &__info-block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 134px;
+    padding-bottom: 149px;
+    background-color: #fff;
+
+    .about__col {
+
+      &_right {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: transparent;
+
+        .text { color: #74747d; }
+      }
+    }
+  }
+}
