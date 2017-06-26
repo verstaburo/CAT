@@ -37,6 +37,7 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    z-index: 2;
 
     @include screen(tablet,max) {
       width: 100%;
@@ -77,6 +78,8 @@
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
+    background-color: #fff;
+    z-index: 2;
 
     @include screen(tablet,max) {
       width: 100%;

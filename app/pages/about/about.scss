@@ -154,6 +154,10 @@
   &__card {
     width: 50%;
     height: 350px;
+
+    &_center {
+      justify-content: center;
+    }
   }
 
   &__footer {
