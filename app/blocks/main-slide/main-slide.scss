@@ -73,7 +73,11 @@
       .text {
         max-width: 295px;
         margin-top: 21px;
-        font-family: $ProximaNova;
+
+        p {
+          font-family: $ProximaNova;
+          line-height: 1.75;
+        }
       }
     }
   }
