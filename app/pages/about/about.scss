@@ -124,4 +124,33 @@
       }
     }
   }
+
+  &__cards {
+    display: block;
+    width: 100%;
+
+    &-row {
+      display: flex;
+      width: 100%;
+      padding-left: 90px;
+      padding-right: 90px;
+
+      &_full {
+        position: relative;
+        background-color: #fff;
+        z-index: 1;
+      }
+
+      .about__card {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  &__card {
+    width: 50%;
+    height: 350px;
+    background-color: #fff;
+  }
 }
