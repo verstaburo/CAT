@@ -27,6 +27,11 @@
     padding-right: 90px;
     z-index: 1;
 
+    @media (max-width: 1024px) {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+
     @media (max-width: 768px) {
       padding-left: 0;
       padding-right: 0;
@@ -59,6 +64,10 @@
     padding: 40px 179px 40px 0;
     background-color: #fff;
 
+    @media (max-width: 1024px) {
+      padding-right: 35px;
+    }
+
     @media (max-width: 768px) {
       width: initial;
       min-height: initial;
@@ -66,8 +75,7 @@
       margin-top: -60px;
       margin-left: 20px;
       margin-right: 20px;
-      padding-left: 38px;
-      padding-right: 38px;
+      padding-left: 35px;
     }
 
     .text {
@@ -91,9 +99,9 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
-      margin-top: 70px;
-      padding-left: 20px;
-      padding-right: 20px;
+      margin-top: 25px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 
@@ -102,18 +110,18 @@
     width: 50%;
     padding-left: 130px;
     padding-right: 130px;
+    max-height: 1200px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1240px) {
       width: 100%;
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
-    .bordered-text {
-      @media (max-width: 768px) {
-        margin-left: 20px;
-        margin-right: 31px;
-      }
+    @media (max-width: 768px) {
+      width: calc(100% + 80px) !important;
+      margin-left: -40px;
+      margin-right: -40px;
     }
 
     &_left {
@@ -126,6 +134,11 @@
 
         @media (max-width: 768px) {
           margin-top: 52px;
+          max-height: 410px;
+          object-fit: contain;
+          margin-left: -20px;
+          margin-right: -20px;
+          width: calc(100% + 40px);
         }
       }
     }
@@ -146,6 +159,13 @@
 
         @media (max-width: 768px) {
           max-width: initial;
+          margin-top: 40px;
+        }
+
+        &:first-of-type {
+          @media (max-width: 768px) {
+            margin-top: 0;
+          }
         }
 
         p {
@@ -187,7 +207,6 @@
     .about__col {
 
       &_right {
-        padding-left: 0;
         padding-top: 0;
         padding-bottom: 0;
         background-color: transparent;
@@ -262,8 +281,12 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @media (max-width: 1024px) {
+      padding: 230px 70px 90px 90px;
+    }
+
     @media (max-width: 768px) {
-      padding: 99px 43px 101px 40px;
+      padding: 50px 50px 101px 40px;
       flex-direction: column;
     }
   }
@@ -292,8 +315,8 @@
     max-width: 50%;
 
     @media (max-width: 768px) {
-      margin-top: 48px;
       max-width: initial;
+      margin-top: 48px;
     }
   }
 }

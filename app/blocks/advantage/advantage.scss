@@ -5,6 +5,10 @@
   padding: 77px 72px 70px 120px;
   background-color: #fff;
 
+  @media (max-width: 1024px) {
+    padding: 40px;
+  }
+
   @media (max-width: 768px) {
     padding: 62px 42px 62px 39px;
   }
@@ -16,6 +20,10 @@
     color: #fff;
     line-height: 1.33;
     letter-spacing: .025em;
+
+    @media (max-width: 1024px) {
+      padding: 0;
+    }
 
     @media (max-width: 768px) {
       font-size: 22px;
