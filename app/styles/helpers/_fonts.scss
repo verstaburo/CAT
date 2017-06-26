@@ -160,101 +160,14 @@
   src: url('../fonts/PFDINTEXTCONDPRO-XBLACKITALIC.TTF')  format('truetype');
 }
 
-// Proxima Nova
+// Circle
 @font-face {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 100;
-  src: url('../fonts/Proxima Nova Thin.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: italic;
-  font-weight: 100;
-  src: url('../fonts/Proxima Nova Thin Italic.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/Proxima Nova Light.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: italic;
-  font-weight: 300;
-  src: url('../fonts/Proxima Nova Light Italic.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'Circe';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Proxima Nova Regular.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: italic;
-  font-weight: 400;
-  src: url('../fonts/Proxima Nova Regular Italic.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/Proxima Nova Semibold.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: italic;
-  font-weight: 600;
-  src: url('../fonts/Proxima Nova Semibold Italic.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/Proxima Nova Bold.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: italic;
-  font-weight: 700;
-  src: url('../fonts/Proxima Nova Bold Italic.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../fonts/Proxima Nova Extrabold.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: italic;
-  font-weight: 800;
-  src: url('../fonts/Proxima Nova Extrabold Italic.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 900;
-  src: url('../fonts/Proxima Nova Black.otf')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  font-style: italic;
-  font-weight: 900;
-  src: url('../fonts/Proxima Nova Black Italic.otf')  format('opentype');
+  src: url('../fonts/Circe-Regular.eot');
+  src:
+    url('../fonts/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circe-Regular.ttf')  format('truetype'),
+    url('../fonts/Circe-Regular.svg#Circe-Regular') format('svg');
 }

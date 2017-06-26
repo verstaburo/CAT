@@ -2,3 +2,9 @@ mixin list(data)
   +b.UL.list&attributes(attributes)
     each item in data
       +e.LI.item= item
+
+mixin list-anchors(data, path)
+  +b.UL.list&attributes(attributes)
+    each item in data
+      +e.LI.item
+        +e.A(href=path).link= item

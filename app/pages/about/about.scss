@@ -11,6 +11,7 @@
     width: 30%;
     height: 100%;
     background-color: #fc9a00;
+    z-index: -1;
   }
 
   &__header {
@@ -87,7 +88,7 @@
         p {
           display: block;
 
-          &:not(:first-child) { margin-top: 33px;}
+          &:not(:first-child) { margin-top: 33px; }
         }
       }
     }
@@ -128,12 +129,14 @@
   &__cards {
     display: block;
     width: 100%;
+    z-index: 2;
 
     &-row {
       display: flex;
       width: 100%;
       padding-left: 90px;
       padding-right: 90px;
+      flex-wrap: wrap;
 
       &_full {
         position: relative;
@@ -151,6 +154,45 @@
   &__card {
     width: 50%;
     height: 350px;
-    background-color: #fff;
+  }
+
+  &__footer {
+    position: relative;
+    min-height: 700px;
+    width: 100%;
+    margin-left: -90px;
+    margin-top: -85px;
+    z-index: 0;
+  }
+
+  &__footer-content {
+    padding: 310px 70px 200px 255px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__footer-bg {
+    @include full-size;
+
+    overflow: hidden;
+    z-index: -1;
+
+    &::after {
+      content: '';
+
+      @include full-size;
+
+      background-color: $color-dark;
+      opacity: .6;
+    }
+
+    img {
+      @include fill-img;
+    }
+  }
+
+  &__footer-text {
+    max-width: 50%;
   }
 }

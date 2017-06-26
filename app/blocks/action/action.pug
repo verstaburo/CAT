@@ -4,9 +4,13 @@ mixin action()
     +e.A(href='#').link
       block
 
-mixin small-action()
-  +b.small-action&attributes(attributes)
-    block
+mixin small-action(path)
+  if path
+    +b.A(href=path).small-action&attributes(attributes)
+      block
+  else
+    +b.small-action&attributes(attributes)
+      block
 
 mixin icon-plus()
   +e.SVG.icon-plus&attributes(attributes)
@@ -17,8 +21,8 @@ mixin small-action-text()
   +e.SPAN.text&attributes(attributes)
     block
 
-mixin small-action-icon()
-  +small-action()._icon&attributes(attributes)
+mixin small-action-icon(path)
+  +small-action(path)._icon&attributes(attributes)
     +icon-plus()
     +small-action-text()
       block

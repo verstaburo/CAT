@@ -21,6 +21,7 @@ $article-offset-top-mobile: 120px;
     @media (max-width: 1070px) {
       width: 100%;
       margin-right: 80px;
+      min-width: initial;
     }
 
     @media (max-width: 768px) {
@@ -128,6 +129,15 @@ $article-offset-top-mobile: 120px;
       font-weight: 700;
       line-height: 36px;
       text-transform: uppercase;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: darken(#7d7d80, 20%);
+      }
     }
   }
 

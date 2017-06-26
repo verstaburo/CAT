@@ -5,6 +5,7 @@ include ../../blocks/page-wrap/page-wrap
 include ../../blocks/text/text
 include ../../blocks/big-heading/big-heading
 include ../../blocks/bordered-text/bordered-text
+include ../../blocks/advantage/advantage
 
 block head
   - var pageTitle = 'CAT - О Компании'
@@ -65,15 +66,35 @@ block content
 
     +e.cards
       +e.cards-row._full
-        +e.card
-          //- сюда нужно вставить карточку
-        +e.card
-          //- сюда нужно вставить карточку
+        +advantage()._main.__card
+          +advantage-intro() Преимущества сотрудничества c ООО <b>«САТ»</b>:
+        +advantage()._dark.__card
+          +advantage-heading()
+            +advantage-number('01')._color_main
+            +advantage-headtext() Собственный парк <br>техники
+          +advantage-text()._c-light Вы ставите задачу и мы без задержек на поиск исполнителей приступаем к ее ыполнению.
       +e.cards-row
-        +e.card
-          //- сюда нужно вставить карточку
-        +e.card
-          //- сюда нужно вставить карточку
+        +advantage().__card
+          +advantage-heading()
+            +advantage-number('02')._color_dark._o_10
+            +advantage-headtext()._dark Квалифицированный <br>постоянный персонал
+          +advantage-text()._grey Коллектив работает слаженно, каждый знает и точно выполняет свои обязанности. Работа с вашим грузом проходит быстро и без неприятных сюрпризов.
+        +advantage()._darken.__card
+          +advantage-heading()
+            +advantage-number('03')._color_light._o_10
+            +advantage-headtext()._dark Работаем с 2005 года
+          +advantage-text()._c-light За это время накопился немалый опыт, появились нужные контакты и налаженные связи с необходимыми организациями – все это поможет вам быстро оформить и доставить груз.
+        +e.footer
+          +e.footer-content
+            +e.footer-bg
+              img(src='assets/images/about/footer.jpg')
+            +bordered-text()._full.__footer-text
+              +text()._white._bold._big
+                p +7 924 401 73 74
+                p +7 914 408 73 14
+            +text()._white.__footer-text
+              p Позвоните или оставьте сообщение и узнайте подробнее о цене такелажных работ, особенностях логистики и тарифах на местные и международные перевозки, сроках получения разрешений. Специалист ООО «САТ» поможет подобрать технику, объяснит подробности сотрудничества, ответит на любые вопросы по работе со сложными грузами и обслуживании техники.
+
 
 block footer
   +footer()

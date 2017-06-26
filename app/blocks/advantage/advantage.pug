@@ -1,0 +1,23 @@
+mixin advantage()
+  +b.advantage&attributes(attributes)
+    block
+
+mixin advantage-intro()
+  +e.P.intro&attributes(attributes)
+    block
+
+mixin advantage-headtext()
+  +e.SPAN.head-text&attributes(attributes)
+    block
+
+mixin advantage-heading()
+  +e.heading&attributes(attributes)
+    block
+
+mixin advantage-number(number)
+  +e.SPAN.number&attributes(attributes)= number
+
+mixin advantage-text()
+  +e.text.text&attributes(attributes)
+    p
+      block

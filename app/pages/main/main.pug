@@ -47,7 +47,7 @@ block content
               +big-heading()._left._huge Наши услуги
               +action().__action Показать все
             +e.col._right
-              +list(getData('offer-list').services)._offer
+              +list-anchors(getData('offer-list').services, 'service.html')._offer
       +main-slide().section
         +slide-bg('park-technics.jpg')._right._o_70
         +container().container_static
@@ -56,7 +56,7 @@ block content
               +big-heading()._left._huge Парк техники
               +action().__action Заказать технику
             +e.col._right
-              +list(getData('offer-list').park)._offer
+              +list-anchors(getData('offer-list').park, 'park-technics.html')._offer
       +main-slide().section.__map
         +slide-bg()._full._o_90.__map
           +map().__map

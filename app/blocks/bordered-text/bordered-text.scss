@@ -26,4 +26,11 @@
     margin-top: 40px;
     color: #74747d;
   }
+
+  &_full {
+
+    &::before {
+      width: 100%;
+    }
+  }
 }
