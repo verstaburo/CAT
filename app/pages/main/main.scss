@@ -55,6 +55,14 @@
   }
 
   &__map {
+    @include screen(tablet-wide,max) {
+      height: 100vh;
+      min-height: 650px;
+    }
+
+    @include screen(tablet,max) {
+      min-height: 560px !important;
+    }
 
     .main-slide__slide-bg {
       z-index: 0;

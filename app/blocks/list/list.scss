@@ -19,6 +19,10 @@
       &__item {
         padding-left: 37px;
 
+        @include screen(tablet,max) {
+          padding-left: 30px;
+        }
+
         &::before {
           font-family: $Circe;
           font-size: 16px;
@@ -33,7 +37,7 @@
           margin-top: 33px;
 
           @include screen(tablet,max) {
-            margin-top: 18px;
+            margin-top: 17px;
           }
         }
       }

@@ -33,42 +33,47 @@ block content
         +container().container_static
           +e.row._center
             +e.col._w_685
-              +big-heading()._left._huge Полный спектр услуг спецтехники
+              +big-heading()._left._huge.__heading._top Полный спектр услуг спецтехники
               +text()._light._white
                 p Перевозка крупногабаритных и тяжеловесных грузов, услуги грузоподъемной техники, сервисное обслуживание спецтехники.
-              +action().__action._t_38 заказать услугу
+              +action().__action заказать услугу
           +e.scroll
             +scroll()
       +main-slide().section
         +slide-bg('services.jpg')._right._o_70
         +container().container_static
-          +e.row
+          +e.row._center._center_m
             +e.col._left
-              +big-heading()._left._huge Наши услуги
-              +action().__action Показать все
+              +big-heading()._left._huge.__heading Наши услуги
+              +action().__action._hide Показать все
             +e.col._right
-              +list-anchors(getData('offer-list').services, 'service.html')._offer
+              +list-anchors(getData('offer-list').services, 'service.html')._offer.__list
       +main-slide().section
         +slide-bg('park-technics.jpg')._right._o_70
         +container().container_static
-          +e.row
+          +e.row._center._center_m
             +e.col._left
-              +big-heading()._left._huge Парк техники
-              +action().__action Заказать технику
+              +big-heading()._left._huge.__heading Парк техники
+              +action().__action._hide Заказать технику
             +e.col._right
-              +list-anchors(getData('offer-list').park, 'park-technics.html')._offer
-      +main-slide().section.__map
+              +list-anchors(getData('offer-list').park, 'park-technics.html')._offer.__list
+      +main-slide().section.__map#contacts
         +slide-bg()._full._o_90.__map
           +map().__map
         +container().container_static
-          +e.row._center
+          +e.row._center._wrap._vertical
+            +big-heading()._left._huge.__heading._top._left Контакты
             +e.col._w_500.__contact-form
-              +big-heading()._left._huge Контакты
               +input({type:'name',placeholder:'Имя'})._white
               +input({type:'email',placeholder:'email'})._white
               +input({type:'text',placeholder:'Комментарий'})._white
-              +action().__action._t_38 Отправить
-            +contact-text().__contact-text
+              +e.map-actions.__action
+                +action() Отправить
+                A(href='#').contact-text__toggler.toMap Назад
+            +e.contact-text
+              +contact-text()
+              +action().__action._show._left.toForm Написать нам
+            A(href='#').contact-text__toggler.toMap.toMap_main Назад
 
 block footer
   +footer(true)

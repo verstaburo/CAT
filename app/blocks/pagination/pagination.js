@@ -6,12 +6,6 @@ export default () => {
 
   var w = $(window);
 
-  function checkWidth() {
-    if (w.width() > 1024) {
-      loadSlides();
-    }
-  }
-
   function loadSlides() {
     if (!document.getElementById('pagepiling')) {
       return;
@@ -41,5 +35,28 @@ export default () => {
     }, 0);
   }
 
-  checkWidth();
+  if (w.width() < 1024) {
+    $('.main-slide__contact-form').addClass('main-slide__contact-form_disabled');
+  }
+
+  function init() {
+    // при ресайзе вешаем статическую переменную на функцию
+    init.sliderInitialized = init.sliderInitialized || false
+
+    if (w.width() > 1024 && !init.sliderInitialized) {
+      loadSlides();
+      $('.main-slide__contact-form').removeClass('main-slide__contact-form_disabled');
+      return init.sliderInitialized = true;
+    }
+
+    if (w.width() <= 1024 && init.sliderInitialized) {
+      init.sliderInitialized = false;
+      location.reload(true);
+    }
+  }
+
+  init();
+  w.resize(function () {
+    init();
+  });
 };

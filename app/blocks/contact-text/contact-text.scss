@@ -2,7 +2,13 @@
   display: block;
   z-index: 5;
   position: relative;
-  pointer-events: all;
+
+  @include transition(opacity);
+
+  &_disabled {
+    pointer-events: none;
+    opacity: 0;
+  }
 
   &_active {
 
@@ -39,6 +45,10 @@
     line-height: 2;
     display: block;
     margin-top: 4px;
+
+    @include screen(tablet,max) {
+      font-size: 15px;
+    }
 
     &:hover {
       color: darken($color-main, 10%);

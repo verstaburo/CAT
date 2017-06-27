@@ -8,6 +8,10 @@
     padding: 120px 0 60px;
   }
 
+  @include screen(tablet,max) {
+    padding: 100px 0 45px !important;
+  }
+
   &.active {
 
     .main-slide__slide-bg {
@@ -21,9 +25,23 @@
 
   &__action {
     margin-top: 28px;
+    z-index: 1;
+    position: relative;
 
-    &_t_38 {
-      margin-top: 38px;
+    &_hide {
+      @include screen(tablet,max) {
+        display: none;
+      }
+    }
+
+    &_show {
+      @include screen(tablet-wide,min) {
+        display: none;
+      }
+    }
+
+    &_left {
+      margin-right: auto;
     }
   }
 
@@ -35,22 +53,58 @@
   &__row {
     display: flex;
 
+    @include screen(tablet,max) {
+      flex-direction: column;
+    }
+
+    &_vertical {
+      @include screen(tablet-wide,max) {
+        flex-direction: column;
+      }
+    }
+
     &_center {
       justify-content: center;
+      align-items: center;
 
       .text {
         max-width: 40%;
         margin-top: 21px;
 
+        @include screen(tablet,max) {
+          display: none;
+        }
+
         p {
           line-height: 1.75;
         }
       }
+
+      &_m {
+        @include screen(tablet,max) {
+          max-width: 55%;
+          align-self: center;
+        }
+
+        @include screen(phablet,max) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &_wrap {
+      flex-wrap: wrap;
     }
   }
 
   &__col {
     box-sizing: content-box;
+
+    @include screen(tablet-wide,max) {
+      flex-basis: auto !important;
+      padding-left: 0 !important;
+      margin-top: 0 !important;
+    }
 
     &_w {
 
@@ -73,6 +127,10 @@
       flex-basis: 50%;
       box-sizing: border-box;
 
+      @include screen(tablet-wide,max) {
+        padding-left: 80px;
+      }
+
       .big-heading {
         max-width: 370px;
       }
@@ -82,6 +140,10 @@
       padding-left: 120px;
       flex-basis: 50%;
       box-sizing: border-box;
+
+      @include screen(tablet-wide,max) {
+        padding-left: 45px;
+      }
     }
   }
 
@@ -93,24 +155,31 @@
     transition: transform 5s cubic-bezier(.3, 0, .7, 1) .5s;
 
     &::after {
-      @include screen(tablet-wide,min) {
-        position: absolute;
-        content: '';
-        top: 0;
-        height: 100%;
-        background-color: #141418;
-        z-index: 0;
-        transform: scale3d(1, 1, 1);
-        transform-origin: right center;
-        transition: all .5s ease-in-out;
+      position: absolute;
+      content: '';
+      top: 0;
+      height: 100%;
+      background-color: #141418;
+      z-index: 0;
+      transform: scale3d(1, 1, 1);
+      transform-origin: right center;
+      transition: all .5s ease-in-out;
+
+      @include screen(tablet-wide,max) {
+        width: 100%;
+        transform-origin: top;
       }
     }
 
     &_active {
 
       &::after {
-        @include screen(tablet-wide) {
+        @include screen(tablet-wide, min) {
           transform: scale3d(.5, 1, 1);
+        }
+
+        @include screen(tablet-wide, max) {
+          transform: scale3d(1, .5, 1);
         }
       }
     }
@@ -149,6 +218,10 @@
 
         &::after {
           opacity: .7;
+
+          @include screen(tablet-wide,max) {
+            opacity: .5;
+          }
         }
       }
 
@@ -156,6 +229,10 @@
 
         &::after {
           opacity: .8;
+
+          @include screen(tablet-wide,max) {
+            opacity: .7;
+          }
         }
       }
 
@@ -163,6 +240,10 @@
 
         &::after {
           opacity: .85;
+
+          @include screen(tablet-wide,max) {
+            opacity: .5;
+          }
         }
       }
 
@@ -188,18 +269,90 @@
   &__contact-text {
     padding-left: 37px;
     margin-top: 35px;
+    pointer-events: all;
+
+    @include transition(all);
+
+    @include screen(tablet-wide,max) {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    &_disabled {
+      height: 0;
+      opacity: 0;
+      pointer-events: none;
+      width: 0;
+      margin: 0;
+    }
   }
 
   &__contact-form {
     z-index: 5;
     position: relative;
     pointer-events: all;
+    height: auto;
 
-    @include transition(opacity);
+    @include screen(tablet-wide,max) {
+      width: 100%;
+    }
+
+    @include transition(all);
 
     &_disabled {
       opacity: 0;
       pointer-events: none;
+
+      @include screen(tablet-wide,max) {
+        height: 0;
+        width: 0;
+      }
     }
+  }
+
+  &__heading {
+    z-index: 1;
+
+    @include screen(tablet,max) {
+      padding-right: 18%;
+      box-sizing: border-box;
+    }
+
+    &_top {
+      @include screen(tablet-wide,max) {
+        margin-top: 60px;
+      }
+    }
+
+    &_left {
+      @include screen(tablet-wide,min) {
+        padding-left: 275px;
+      }
+    }
+  }
+
+  &__list {
+    @include screen(tablet,max) {
+      padding-right: 50px;
+      margin-top: 20px;
+    }
+  }
+
+  &__map-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.toMap {
+  @include screen(tablet-wide,min) {
+    display: none;
+  }
+
+  &_main {
+    display: none;
+    position: relative;
+    margin-right: auto;
+    pointer-events: all;
   }
 }
