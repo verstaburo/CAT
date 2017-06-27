@@ -2,6 +2,11 @@
   display: flex;
   min-height: 100vh;
   padding: 160px 0 90px;
+  position: relative;
+
+  @include screen(desktop,max) {
+    padding: 120px 0 60px;
+  }
 
   &.active {
 
@@ -29,6 +34,19 @@
 
   &__row {
     display: flex;
+
+    &_center {
+      justify-content: center;
+
+      .text {
+        max-width: 40%;
+        margin-top: 21px;
+
+        p {
+          line-height: 1.75;
+        }
+      }
+    }
   }
 
   &__col {
@@ -65,20 +83,6 @@
       flex-basis: 50%;
       box-sizing: border-box;
     }
-
-    &_center {
-      padding-left: 298px;
-      margin-top: 32px;
-
-      .text {
-        max-width: 280px;
-        margin-top: 21px;
-
-        p {
-          line-height: 1.75;
-        }
-      }
-    }
   }
 
   &__slide-bg {
@@ -89,21 +93,25 @@
     transition: transform 5s cubic-bezier(.3, 0, .7, 1) .5s;
 
     &::after {
-      position: absolute;
-      content: '';
-      top: 0;
-      height: 100%;
-      background-color: #141418;
-      z-index: 0;
-      transform: scale3d(1, 1, 1);
-      transform-origin: right center;
-      transition: all .5s ease-in-out;
+      @include screen(tablet-wide,min) {
+        position: absolute;
+        content: '';
+        top: 0;
+        height: 100%;
+        background-color: #141418;
+        z-index: 0;
+        transform: scale3d(1, 1, 1);
+        transform-origin: right center;
+        transition: all .5s ease-in-out;
+      }
     }
 
     &_active {
 
       &::after {
-        transform: scale3d(.5, 1, 1);
+        @include screen(tablet-wide) {
+          transform: scale3d(.5, 1, 1);
+        }
       }
     }
 
