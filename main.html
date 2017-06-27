@@ -98,13 +98,13 @@
                     <img src="assets/images/background/main.jpg" />
                 </div>
                 <div class="container container_static">
-                    <div class="main-slide__row">
-                        <div class="main-slide__col main-slide__col_center main-slide__col_w_685">
-                            <h1 class="big-heading big-heading_left big-heading_huge">Полный спектр услуг спецтехники</h1>
+                    <div class="main-slide__row main-slide__row_center">
+                        <div class="main-slide__col main-slide__col_w_685">
+                            <h1 class="big-heading big-heading_left big-heading_huge main-slide__heading main-slide__heading_top">Полный спектр услуг спецтехники</h1>
                             <div class="text text_light text_white">
                                 <p>Перевозка крупногабаритных и тяжеловесных грузов, услуги грузоподъемной техники, сервисное обслуживание спецтехники.</p>
                             </div>
-                            <div class="action main-slide__action main-slide__action_t_38">
+                            <div class="action main-slide__action">
                                 <span class="action__line"></span>
                                 <a class="action__link" href="#">заказать услугу</a>
                             </div>
@@ -123,16 +123,16 @@
                     <img src="assets/images/background/services.jpg" />
                 </div>
                 <div class="container container_static">
-                    <div class="main-slide__row">
+                    <div class="main-slide__row main-slide__row_center main-slide__row_center_m">
                         <div class="main-slide__col main-slide__col_left">
-                            <h1 class="big-heading big-heading_left big-heading_huge">Наши услуги</h1>
-                            <div class="action main-slide__action">
+                            <h1 class="big-heading big-heading_left big-heading_huge main-slide__heading">Наши услуги</h1>
+                            <div class="action main-slide__action main-slide__action_hide">
                                 <span class="action__line"></span>
                                 <a class="action__link" href="#">Показать все</a>
                             </div>
                         </div>
                         <div class="main-slide__col main-slide__col_right">
-                            <ul class="list list_offer">
+                            <ul class="list list_offer main-slide__list">
                                 <li class="list__item">
                                     <a class="list__link" href="service.html">крупногабаритные и тяжеловесные перевозки грузов</a>
                                 </li>
@@ -161,16 +161,16 @@
                     <img src="assets/images/background/park-technics.jpg" />
                 </div>
                 <div class="container container_static">
-                    <div class="main-slide__row">
+                    <div class="main-slide__row main-slide__row_center main-slide__row_center_m">
                         <div class="main-slide__col main-slide__col_left">
-                            <h1 class="big-heading big-heading_left big-heading_huge">Парк техники</h1>
-                            <div class="action main-slide__action">
+                            <h1 class="big-heading big-heading_left big-heading_huge main-slide__heading">Парк техники</h1>
+                            <div class="action main-slide__action main-slide__action_hide">
                                 <span class="action__line"></span>
                                 <a class="action__link" href="#">Заказать технику</a>
                             </div>
                         </div>
                         <div class="main-slide__col main-slide__col_right">
-                            <ul class="list list_offer">
+                            <ul class="list list_offer main-slide__list">
                                 <li class="list__item">
                                     <a class="list__link" href="park-technics.html">Автокраны</a>
                                 </li>
@@ -200,30 +200,40 @@
                     </div>
                 </div>
             </div>
-            <div class="main-slide section main__map">
+            <div class="main-slide section main__map" id="contacts">
                 <div class="main-slide__slide-bg main-slide__slide-bg_full main-slide__slide-bg_o_90 main-slide__map">
                     <div class="map main-slide__map" id="map"></div>
                 </div>
                 <div class="container container_static">
-                    <div class="main-slide__row">
-                        <div class="main-slide__col main-slide__col_center main-slide__col_w_500 main-slide__contact-form">
-                            <h1 class="big-heading big-heading_left big-heading_huge">Контакты</h1>
+                    <div class="main-slide__row main-slide__row_center main-slide__row_wrap main-slide__row_vertical">
+                        <h1 class="big-heading big-heading_left big-heading_huge main-slide__heading main-slide__heading_top main-slide__heading_left">Контакты</h1>
+                        <div class="main-slide__col main-slide__col_w_500 main-slide__contact-form">
                             <input class="input input_white" type="name" placeholder="Имя" />
                             <input class="input input_white" type="email" placeholder="email" />
                             <input class="input input_white" type="text" placeholder="Комментарий" />
-                            <div class="action main-slide__action main-slide__action_t_38">
-                                <span class="action__line"></span>
-                                <a class="action__link" href="#">Отправить</a>
+                            <div class="main-slide__map-actions main-slide__action">
+                                <div class="action">
+                                    <span class="action__line"></span>
+                                    <a class="action__link" href="#">Отправить</a>
+                                </div>
+                                <A class="contact-text__toggler toMap" href="#">Назад</A>
                             </div>
                         </div>
-                        <div class="contact-text main-slide__contact-text">
-                            <p class="contact-text__text">+7 914 408 73 14</p>
-                            <p class="contact-text__text">+7 924 401 73 74</p>
-                            <p class="contact-text__text">cpecavto@cat.ru</p>
-                            <p class="contact-text__text">г. Хабаровск, пер. Трудовой, 3</p>
-                            <a class="contact-text__toggler contact-text__toggler_show" href="#">показать на карте</a>
-                            <a class="contact-text__toggler contact-text__toggler_hide" href="#">убрать карту</a>
+                        <div class="main-slide__contact-text">
+                            <div class="contact-text">
+                                <p class="contact-text__text">+7 914 408 73 14</p>
+                                <p class="contact-text__text">+7 924 401 73 74</p>
+                                <p class="contact-text__text">cpecavto@cat.ru</p>
+                                <p class="contact-text__text">г. Хабаровск, пер. Трудовой, 3</p>
+                                <a class="contact-text__toggler contact-text__toggler_show" href="#">показать на карте</a>
+                                <a class="contact-text__toggler contact-text__toggler_hide" href="#">убрать карту</a>
+                            </div>
+                            <div class="action main-slide__action main-slide__action_show main-slide__action_left toForm">
+                                <span class="action__line"></span>
+                                <a class="action__link" href="#">Написать нам</a>
+                            </div>
                         </div>
+                        <A class="contact-text__toggler toMap toMap_main" href="#">Назад</A>
                     </div>
                 </div>
             </div>
