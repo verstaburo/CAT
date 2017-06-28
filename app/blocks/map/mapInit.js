@@ -25,16 +25,14 @@ export default () => {
   const image = 'assets/images/googlemap/marker.png';
   map.then((googleMaps) => {
     // eslint-disable-next-line no-new
+    window.basiczoom = 17;
+
     const mapFrame = new googleMaps.Map(mapElement, {
-      zoom: 17,
+      zoom: basiczoom,
       center: centerPoint,
       mapTypeId: googleMaps.MapTypeId.ROADMAP,
       scrollwheel: false,
       disableDefaultUI: true,
-      // zoomControl: true,
-      // zoomControlOptions: {
-      //   position: googleMaps.ControlPosition.BOTTOM_CENTER
-      // }
     });
     // eslint-disable-next-line no-new
     const marker = new googleMaps.Marker({
@@ -42,5 +40,19 @@ export default () => {
       icon: image,
     });
     marker.setMap(mapFrame);
+
+    document.getElementById('zoomIn').onclick = function() {
+      if (basiczoom != 21) {
+        basiczoom += 1;
+        mapFrame.setZoom(basiczoom);
+      }
+    };
+
+    document.getElementById('zoomOut').onclick = function() {
+      if (basiczoom != 4) {
+        basiczoom -= 1;
+        mapFrame.setZoom(basiczoom);
+      }
+    };
   }).catch(f => f);
 };

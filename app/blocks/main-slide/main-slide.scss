@@ -343,6 +343,18 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &__map-controls {
+    position: absolute;
+    bottom: 60px;
+    right: calc(50% + 35px);
+
+    @include screen(tablet-wide,max) {
+      transform: translateY(-50%);
+      bottom: 20%;
+      right: 35px;
+    }
+  }
 }
 
 .toMap {

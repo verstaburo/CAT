@@ -1,9 +1,14 @@
 .map-controls {
   display: block;
   width: 47px;
-  position: relative;
-  z-index: 5;
   pointer-events: all;
+
+  @include transition(opacity);
+
+  &.disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
 
   &__item {
     background-color: #3f3f42;

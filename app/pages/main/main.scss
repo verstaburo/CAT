@@ -59,6 +59,8 @@
   }
 
   &__map {
+    position: relative !important;
+
     @include screen(tablet-wide,max) {
       height: 100vh;
       min-height: 650px;
