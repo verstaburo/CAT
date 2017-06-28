@@ -1,7 +1,7 @@
-mixin action()
+mixin action(link)
   +b.action&attributes(attributes)
     +e.SPAN.line
-    +e.A(href='#').link
+    +e.A(href=link||'#').link
       block
 
 mixin small-action(path)

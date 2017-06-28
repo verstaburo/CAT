@@ -1,3 +1,7 @@
-mixin button()
-  +b.BUTTON.button&attributes(attributes)
-    block
+mixin button(link)
+  if link
+    +b.A(href=link).button&attributes(attributes)
+      block
+  else
+    +b.BUTTON.button&attributes(attributes)
+      block

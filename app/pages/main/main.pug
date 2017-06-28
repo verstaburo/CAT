@@ -10,6 +10,7 @@ include ../../blocks/contact-text/contact-text
 include ../../blocks/input/input
 include ../../blocks/main-slide/main-slide
 include ../../components/main-controls/main-controls
+include ../../blocks/map-controls/map-controls
 
 block head
   - var pageTitle = 'CAT - Главная'
@@ -36,7 +37,7 @@ block content
               +big-heading()._left._huge.__heading._top Полный спектр услуг спецтехники
               +text()._light._white
                 p Перевозка крупногабаритных и тяжеловесных грузов, услуги грузоподъемной техники, сервисное обслуживание спецтехники.
-              +action().__action заказать услугу
+              +action('order-service.html').__action заказать услугу
           +e.scroll
             +scroll()
       +main-slide().section
@@ -45,7 +46,7 @@ block content
           +e.row._center._center_m
             +e.col._left
               +big-heading()._left._huge.__heading Наши услуги
-              +action().__action._hide Показать все
+              +action('services.html').__action._hide Показать все
             +e.col._right
               +list-anchors(getData('offer-list').services, 'service.html')._offer.__list
       +main-slide().section
@@ -54,7 +55,7 @@ block content
           +e.row._center._center_m
             +e.col._left
               +big-heading()._left._huge.__heading Парк техники
-              +action().__action._hide Заказать технику
+              +action('park-technics.html').__action._hide Заказать технику
             +e.col._right
               +list-anchors(getData('offer-list').park, 'park-technics.html')._offer.__list
       +main-slide().section.__map#contacts

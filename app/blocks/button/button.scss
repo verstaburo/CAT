@@ -9,10 +9,11 @@
   color: #fff;
   line-height: 4;
   padding: 0 30px;
-  min-width: 225px;
+  max-width: 225px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     background-color: darken($color-main, 5%);

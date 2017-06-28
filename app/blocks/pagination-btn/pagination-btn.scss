@@ -13,13 +13,21 @@
       &__text { color: #828282; }
       &__arrow { color: #4a4a53; }
     }
+
+    &:hover {
+      background-color: darken(#f6f6f6, 5%);
+    }
   }
 
   &_orange {
-    background-color: #fc9a00;
+    background-color: $color-main;
 
     .pagination-btn {
       &__text, &__arrow { color: #fff; }
+    }
+
+    &:hover {
+      background-color: darken($color-main, 5%);
     }
   }
 

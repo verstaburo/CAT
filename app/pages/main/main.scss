@@ -20,6 +20,10 @@
       pointer-events: all;
       opacity: 1;
     }
+
+    .container {
+      padding-left: 300px;
+    }
   }
 
   &__pagination {
@@ -70,6 +74,7 @@
 
     .container {
       pointer-events: none;
+      justify-content: flex-start;
     }
   }
 }

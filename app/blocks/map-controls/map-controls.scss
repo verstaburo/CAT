@@ -1,0 +1,37 @@
+.map-controls {
+  display: block;
+  width: 47px;
+  position: relative;
+  z-index: 5;
+  pointer-events: all;
+
+  &__item {
+    background-color: #3f3f42;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @include transition(background-color);
+
+    &:not(:first-of-type) {
+      margin-top: 5px;
+    }
+
+    &:hover {
+      background-color: darken(#3f3f42, 10%);
+    }
+  }
+
+  &__line {
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+
+    &_vertical {
+      transform: rotate(-90deg);
+      margin-left: -15px;
+    }
+  }
+}

@@ -5,6 +5,10 @@
   padding-right: 4%;
   padding-bottom: 135px;
 
+  &_service {
+    justify-content: center;
+  }
+
   @include screen(tablet-wide, max) {
     flex-direction: column;
     align-items: center;

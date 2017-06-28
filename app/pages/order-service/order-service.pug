@@ -1,0 +1,29 @@
+extends ../../layouts/default
+include ../../blocks/page-wrap/page-wrap
+include ../../blocks/big-heading/big-heading
+include ../../blocks/product-preview/product-preview
+include ../../blocks/input/input
+include ../../blocks/button/button
+include ../../blocks/map-controls/map-controls
+
+block head
+  - var pageTitle = 'CAT - Заказать услугу'
+
+block header
+  -
+    var data = getData('page-menu')
+    data[0].active = true
+  +header(data)
+
+block content
+  +page-wrap()
+    +b.order._service
+      +e.form
+        +input({type: 'name', placeholder: 'имя'})._medium.__input
+        +input({type: 'email', placeholder: 'email'})._medium.__input
+        +input({type: 'tel', placeholder: 'телефон'})._medium.__input
+        +input({type: 'text', placeholder: 'комментарий'})._medium.__input
+        +button().__button Отправить заявку
+
+block footer
+  +footer()
