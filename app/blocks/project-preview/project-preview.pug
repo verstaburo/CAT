@@ -1,10 +1,17 @@
 include ../action/action
 
-mixin project-preview(tag, title, img)
+mixin project-preview(tag, title, img, more)
   +b.project-preview&attributes(attributes)
     +e.overlay
       img(src='assets/images/projects/'+img+'.jpg')
       +small-action-icon()._white.__action Увеличить
     +e.text-block
-      +e.A(href='services.html').link._grey= tag
-      +e.A(href='service.html').link._big= title
+      if more
+        +e.tags
+          +e.A(href='services.html').text._link._grey= tag
+          +e.SPAN.text._link._grey.__more +2
+          +e.SPAN.text._grey.__more-text Услуги грузоподъемных механизмов, услуга 2, услуга 3, услуга 4, услуга 5
+      else
+        +e.tags
+          +e.A(href='services.html').text._link._grey= tag
+      +e.A(href='service.html').text._link._big= title

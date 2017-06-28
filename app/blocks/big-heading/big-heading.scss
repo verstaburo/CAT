@@ -9,6 +9,8 @@
   font-family: $BebasNeue;
   font-weight: 700;
 
+  @include transition(opacity);
+
   @include screen(tablet, max) {
     font-size: 48px;
     letter-spacing: .03em;
