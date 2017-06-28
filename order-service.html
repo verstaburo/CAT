@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CAT - демонстрация верстки</title>
+    <title>CAT - Заказать услугу</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
@@ -36,7 +36,7 @@
                 </div>
                 <h1 class="big-heading menu__heading">Меню</h1>
                 <ul class="menu__items">
-                    <li class="menu__item">
+                    <li class="menu__item menu__item_active">
                         <a class="menu__link" href="services.html">Услуги</a>
                     </li>
                     <li class="menu__item">
@@ -57,46 +57,14 @@
         </div>
     </header>
     <main class="page-wrap container" role="main">
-        <h1 class="big-heading">Демонстрация верстки</h1>
-        <div class="demo">
-            <a class="demo__link" href="main.html">01_СAT_Главная</a>
-            <span class="demo__title">(main.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="park-technics.html">02_CAT_Парк техники</a>
-            <span class="demo__title">(park-technics.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="order.html">02_CAT_Парк техники: форма</a>
-            <span class="demo__title">(order.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="order-success.html">02_CAT_Парк техники: заявка отправлена</a>
-            <span class="demo__title">(order-success.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="services.html">03_САТ_Список услуг</a>
-            <span class="demo__title">(services.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="service.html">04_CAT_Услуга</a>
-            <span class="demo__title">(service.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="projects.html">05_САТ_Проекты</a>
-            <span class="demo__title">(projects.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="project.html">06_САТ_Проект</a>
-            <span class="demo__title">(project.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="about.html">07_САТ_О Компании</a>
-            <span class="demo__title">(about.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="order-service.html">Заказать услугу</a>
-            <span class="demo__title">(order-service.html)</span>
+        <div class="order order_service">
+            <div class="order__form">
+                <input class="input input_medium order__input" type="name" placeholder="имя" />
+                <input class="input input_medium order__input" type="email" placeholder="email" />
+                <input class="input input_medium order__input" type="tel" placeholder="телефон" />
+                <input class="input input_medium order__input" type="text" placeholder="комментарий" />
+                <button class="button order__button">Отправить заявку</button>
+            </div>
         </div>
     </main>
     <footer class="footer">
