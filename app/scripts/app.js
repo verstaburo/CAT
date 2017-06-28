@@ -1,5 +1,6 @@
 import svg4everybody from 'svg4everybody';
 import 'object-fit-images';
+import 'jscroll';
 import menu from '../blocks/menu/menu';
 import mapInit from '../blocks/map/mapInit';
 import main from '../pages/main/main';

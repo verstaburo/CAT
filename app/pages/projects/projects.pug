@@ -19,7 +19,7 @@ block content
     +big-heading().__heading Выполненные <br>проекты
     +b.projects
       - var i = 0
-      +grid()
+      +grid().js-projects-container
         +col(6)
           +project-preview('негабаритные перевозки', 'Перевозка автокрана Kato 65 тонн из Хабаровска в Комсомольск-на-Амуре', ++i, true)._big
         +col(3)
@@ -40,10 +40,14 @@ block content
           +project-preview('негабаритные перевозки', 'Перевозка колонны длиной 38 метров', ++i, true)
         +col(6)
           +project-preview('негабаритные перевозки', 'Перевозка буровой установки из Хабаровска во Владивосток', ++i, true)._big
-      +button().__button показать еще
+
+      +button().__button.js-projects-show-more показать еще
 
 
 
 
 block footer
   +footer()
+
+block scripts
+  script(src='assets/scripts/ajax/projects.js')
