@@ -15,6 +15,11 @@
   cursor: pointer;
   text-decoration: none;
 
+  &:disabled {
+    opacity: .5;
+    cursor: wait;
+  }
+
   &:hover {
     background-color: darken($color-main, 5%);
   }
