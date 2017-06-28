@@ -1,6 +1,5 @@
 /* eslint-disable */
 $(function () {
-  // Подгрузка первых записей
   var container = $('.projects'),
       content = $('.js-projects-container'),
       spinner = $('<div class="spinner"></div>'),
