@@ -1,7 +1,6 @@
 extends ../../layouts/default
 include ../../blocks/page-wrap/page-wrap
 include ../../blocks/big-heading/big-heading
-include ../../blocks/product-preview/product-preview
 include ../../blocks/input/input
 include ../../blocks/button/button
 include ../../blocks/map-controls/map-controls
@@ -17,6 +16,7 @@ block header
 
 block content
   +page-wrap()
+    +big-heading() Заказать услугу
     +b.order._service
       +e.form
         +input({type: 'name', placeholder: 'имя'})._medium.__input
