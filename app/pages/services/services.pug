@@ -17,20 +17,12 @@ block content
   +page-wrap()
     +big-heading().__heading Наши услуги
     +b.services
-      +grid()
-        +col(4)
-          +service-preview('oversized', 'Негабаритные перевозки')._text-big
-          +grid().__subgrid
-            +col(3)
-              +service-preview('logistics', 'Логистические услуги')
-            +col(3)
-              +service-preview('rigging', 'Такелажные работы')
-        +col(2)
-          +service-preview('load-lifting', 'Услуги грузоподъемных механизмов')._tall._text-big
-        +col(3)
-          +service-preview('repair', 'Ремонт спецтехники')
-        +col(3)
-          +service-preview('international', 'Международные перевозки грузов')
+      +service-preview('oversized', 'Негабаритные перевозки')
+      +service-preview('logistics', 'Логистические услуги')
+      +service-preview('rigging', 'Такелажные работы')
+      +service-preview('load-lifting', 'Услуги грузоподъемных механизмов')
+      +service-preview('repair', 'Ремонт спецтехники')
+      +service-preview('international', 'Международные перевозки грузов')
 
 block footer
   +footer()
