@@ -10,7 +10,7 @@ export default () => {
   // Ищем элементы на странице и удаляем модификаторы
   const previews = services
     .find('.service-preview')
-    .removeClass('service-preview_text_big service-preview_tall');
+    .removeClass('service-preview_text-big service-preview_tall');
 
   if (!previews.length) {
     return;
@@ -36,6 +36,7 @@ export default () => {
     const nextItems = items.map((arrChunk) => {
       // Если 1 элемент
       if (arrChunk.length === 1) {
+        arrChunk[0].classList.add('service-preview_text-big');
         return `<div class="grid__col grid__col_six">${arrChunk[0].outerHTML}</div>`;
       }
       // Если 2 элемента
@@ -45,7 +46,7 @@ export default () => {
       // Если 3 элемента
       if (arrChunk.length === 3) {
         const nextChunk = arrChunk.map((el, i) => {
-          el.classList.add('service-preview_text_big');
+          el.classList.add('service-preview_text-big');
 
           if (i === 0) {
             return el.outerHTML;
@@ -67,7 +68,7 @@ export default () => {
       if (arrChunk.length === 4) {
         const nextChunk = arrChunk.map((el, i) => {
           if (i === 0) {
-            el.classList.add('service-preview_text_big');
+            el.classList.add('service-preview_text-big');
             return el.outerHTML;
           }
 
@@ -75,7 +76,7 @@ export default () => {
             return `<div class="grid__col grid__col_three">${el.outerHTML}</div>`;
           }
 
-          el.classList.add('service-preview_text_big');
+          el.classList.add('service-preview_text-big');
           el.classList.add('service-preview_tall');
 
           return `<div class="grid__col grid__col_two">${el.outerHTML}</div>`;
