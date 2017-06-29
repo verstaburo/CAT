@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CAT - демонстрация верстки</title>
+    <title>CAT - Список услуг</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
@@ -36,7 +36,7 @@
                 </div>
                 <h1 class="big-heading menu__heading">Меню</h1>
                 <ul class="menu__items">
-                    <li class="menu__item">
+                    <li class="menu__item menu__item_active">
                         <a class="menu__link" href="services.html">Услуги</a>
                     </li>
                     <li class="menu__item">
@@ -57,56 +57,32 @@
         </div>
     </header>
     <main class="page-wrap container" role="main">
-        <h1 class="big-heading">Демонстрация верстки</h1>
-        <div class="demo">
-            <a class="demo__link" href="main.html">01_СAT_Главная</a>
-            <span class="demo__title">(main.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="park-technics.html">02_CAT_Парк техники</a>
-            <span class="demo__title">(park-technics.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="order.html">02_CAT_Парк техники: форма</a>
-            <span class="demo__title">(order.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="order-success.html">02_CAT_Парк техники: заявка отправлена</a>
-            <span class="demo__title">(order-success.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="services.html">03_САТ_Список услуг</a>
-            <span class="demo__title">(services.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="services-demo.html">03_САТ_Список услуг (ДЕМО ПЕРЕСТРОЕНИЯ СЕТКИ)</a>
-            <span class="demo__title">(services-demo.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="service.html">04_CAT_Услуга</a>
-            <span class="demo__title">(service.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="projects.html">05_САТ_Проекты</a>
-            <span class="demo__title">(projects.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="project.html">06_САТ_Проект</a>
-            <span class="demo__title">(project.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="about.html">07_САТ_О Компании</a>
-            <span class="demo__title">(about.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="order-service.html">Заказать услугу</a>
-            <span class="demo__title">(order-service.html)</span>
-        </div>
-        <div class="demo">
-            <a class="demo__link" href="order-service-success.html">Услуга: заявка отправлена</a>
-            <span class="demo__title">(order-service-success.html)</span>
+        <h1 class="big-heading page-wrap__heading">Наши услуги (ДЕМО)</h1>
+        <div class="services">
+            <a class="service-preview" href="service.html">
+                <img src="assets/images/services/oversized.jpg" />
+                <span class="small-action small-action_icon small-action_white service-preview__action">
+                    <svg class="small-action__icon-plus">
+                        <line x1="7" x2="7" y1="0" y2="14"></line>
+                        <line x1="0" x2="14" y1="7" y2="7"></line>
+                    </svg>
+                    <span class="small-action__text">Подробнее</span>
+                </span>
+                <span class="service-preview__title">Негабаритные перевозки</span>
+            </a>
         </div>
     </main>
+    <script>
+        setInterval(() => {
+            var i = $('.service-preview').last(),
+                c = $('.services');
+            i.clone().insertBefore(i);
+            rebuildServicesGrid();
+            $('html, body').animate({
+                scrollTop: c.offset().top + c.outerHeight() - $(window).height()
+            });
+        }, 1000)
+    </script>
     <footer class="footer">
         <div class="container">
             <div class="footer__row">
