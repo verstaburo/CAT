@@ -24,4 +24,19 @@ $(function () {
       }
     });
   });
+
+  $(window).on('scroll', function () {
+    if (container.find('.spinner').length) {
+      return;
+    }
+
+    var w = $(this),
+        sT = w.scrollTop(),
+        vH = w.height(),
+        bottomBreakpoint = loadBtn.offset().top + loadBtn.outerHeight();
+
+    if (sT + vH >= bottomBreakpoint) {
+      loadBtn.trigger('click');
+    }
+  });
 });
