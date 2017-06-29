@@ -1,0 +1,77 @@
+.selectbox {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    @include triangle(black, down, 3px);
+    @include transition(transform);
+
+    right: 0;
+    transform: translateY(-50%);
+    bottom: 40%;
+  }
+
+  &_active {
+
+    &::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .selectbox {
+
+      &__list {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  &__button {
+    text-transform: uppercase;
+  }
+
+  &__list {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 46px rgba(black, .62);
+    z-index: 10;
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .25s ease-in-out;
+    line-height: 1.75;
+
+    &_top {
+      transform: translate3d(0, -10px, 0);
+      bottom: 100%;
+      top: auto;
+      margin-top: 0;
+    }
+  }
+
+  &__option {
+    position: relative;
+    transition: all .25s ease-in-out;
+    padding: 10px;
+    color: $color-dark;
+
+    &_active {
+      background-color: rgba(0, 0, 0, .1);
+    }
+
+    &:not(:first-of-type) {
+      border-top: 1px solid rgba(101, 101, 106, .4);
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .2);
+      cursor: pointer;
+    }
+  }
+}

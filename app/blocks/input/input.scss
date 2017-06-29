@@ -29,6 +29,10 @@
     &::placeholder {
       color: #fff;
     }
+
+    &::after {
+      border-top-color: #fff !important;
+    }
   }
 
   &::placeholder {

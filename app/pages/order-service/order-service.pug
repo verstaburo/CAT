@@ -4,6 +4,7 @@ include ../../blocks/big-heading/big-heading
 include ../../blocks/input/input
 include ../../blocks/button/button
 include ../../blocks/map-controls/map-controls
+include ../../blocks/selectbox/selectbox
 
 block head
   - var pageTitle = 'CAT - Заказать услугу'
@@ -22,6 +23,7 @@ block content
         +input({type: 'name', placeholder: 'имя'})._medium.__input
         +input({type: 'email', placeholder: 'email'})._medium.__input
         +input({type: 'tel', placeholder: 'телефон'})._medium.__input
+        +selectbox({placeholder: 'Выберите услугу', option: ['Негабаритные перевозки','Логистические услуги','Такелажные работы','Услуги грузоподъемных механизмов', 'Ремонт спецтехники',  'Международные перевозки грузов']})._medium.__input
         +input({type: 'text', placeholder: 'комментарий'})._medium.__input
         +button().__button Отправить заявку
 

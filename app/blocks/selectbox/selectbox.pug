@@ -1,0 +1,7 @@
+mixin selectbox(data)
+  +b.selectbox.input&attributes(attributes)
+    +e.INPUT.input(type='hidden' value='' placeholder=placeholder required=true)
+    +e.button= data.placeholder
+    +e.UL.list
+      each option in data.option
+        +e.LI.option= option

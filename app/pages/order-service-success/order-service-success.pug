@@ -1,11 +1,10 @@
 extends ../../layouts/default
 include ../../blocks/big-heading/big-heading
-include ../../blocks/product-preview/product-preview
 include ../../blocks/page-wrap/page-wrap
 include ../../blocks/text/text
 
 block head
-  - var pageTitle = 'CAT - Заявка отправлена'
+  - var pageTitle = 'CAT - Услуги: Заявка отправлена'
 
 block header
   -
@@ -16,21 +15,9 @@ block header
 block content
   +page-wrap()
     +big-heading() заявка отправлена
-    +b.order-success
+    +b.order-success._tall
       +text().__text._success
         p Ваша заявка успешно отправлена, с вами свяжется наш менеджер для уточнения деталей заказа
-      +text().__text._more
-        h3 ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ
-      +b.park-technics
-        -
-          var data = getData('park-technics')[9]
-          data.img = 'assets/images/park-technics/10.png'
-        +product-preview(data).__product
-        -
-          var data = getData('park-technics')[15]
-          data.img = 'assets/images/park-technics/16.png'
-        +product-preview(data).__product
-
 
 block footer
   +footer()

@@ -22,7 +22,7 @@
 
   &__input {
 
-    &:not(:first-of-type) {
+    &:not(:first-child) {
       margin-top: 11px;
 
       @include screen(tablet-wide, min) {
