@@ -1,0 +1,26 @@
+extends ../../layouts/default
+include ../../blocks/page-wrap/page-wrap
+include ../../blocks/big-heading/big-heading
+include ../../blocks/grid/grid
+include ../../blocks/service-preview/service-preview
+
+block head
+  - var pageTitle = 'CAT - Список услуг'
+
+block header
+  -
+    var data = getData('page-menu')
+    data[0].active = true
+  +header(data)
+
+block content
+  +page-wrap()
+    +big-heading().__heading Наши услуги (ДЕМО)
+    +b.services
+      +service-preview('oversized', 'Негабаритные перевозки')
+
+  script
+    | setInterval(() => { var i = $('.service-preview').last(), c = $('.services'); i.clone().insertBefore(i); rebuildServicesGrid(); $('html, body').animate({scrollTop: c.offset().top + c.outerHeight() - $(window).height()}); }, 1000)
+
+block footer
+  +footer()
