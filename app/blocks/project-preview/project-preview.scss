@@ -36,8 +36,8 @@
     padding: 40px;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
     z-index: 2;
+    text-decoration: none;
 
     @include screen(tablet,max) {
       width: 100%;

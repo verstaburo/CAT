@@ -1,5 +1,7 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import '../../node_modules/pagepiling.js/dist/jquery.pagepiling.min.css';
+@import 'libs/magnific-popup.css';
+@import '../../node_modules/animate.css/animate.css';
 @import 'helpers/mixins'; // Миксины
 @import 'helpers/fonts'; // Шрифты
 @import 'helpers/variables'; // Переменные
@@ -14,4 +16,29 @@ body {
 
 main {
   clear: left;
+}
+
+.mfp-fade .mfp-container, .mfp-fade.mfp-bg {
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.mfp-fade.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-ready.mfp-bg {
+  opacity: .9;
+}
+
+.mfp-fade.mfp-removing .mfp-container, .mfp-fade.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.mfp-close {
+  margin-right: -30px;
+  margin-top: 25px;
+  opacity: 1;
+  color: white;
+  font-family: initial;
 }

@@ -2,7 +2,7 @@ include ../action/action
 
 mixin project-preview(tag, title, img, more)
   +b.project-preview&attributes(attributes)
-    +e.overlay
+    +e.A(href='assets/images/projects/'+img+'.jpg').overlay.popup
       img(src='assets/images/projects/'+img+'.jpg')
       +small-action-icon()._white.__action Увеличить
     +e.text-block

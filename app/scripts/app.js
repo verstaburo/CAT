@@ -7,8 +7,10 @@ import pagination from '../blocks/pagination/pagination'; // здесь так �
 import productPreview from '../blocks/product-preview/product-preview';
 import services from '../pages/services/services';
 import selectbox from '../blocks/selectbox/selectbox';
+import popup from './common/popup';
 
 const $ = window.$;
+
 $(() => {
   svg4everybody();
   menu();
@@ -19,4 +21,5 @@ $(() => {
   services();
   window.rebuildServicesGrid = services;
   selectbox();
+  popup();
 });
