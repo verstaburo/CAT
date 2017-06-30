@@ -34,7 +34,7 @@ block content
         +slide-bg('main.jpg')._left._o_85
         +container().container_static
           +e.row._center
-            +e.col._w_685
+            +e.col._w_685.fromLeft
               +big-heading()._left._huge.__heading._top Полный спектр услуг спецтехники
               +text()._light._white
                 p Перевозка крупногабаритных и тяжеловесных грузов, услуги грузоподъемной техники, сервисное обслуживание спецтехники.
@@ -45,27 +45,27 @@ block content
         +slide-bg('services.jpg')._right._o_70
         +container().container_static
           +e.row._center._center_m
-            +e.col._left
+            +e.col._left.fromLeft
               +big-heading()._left._huge.__heading Наши услуги
               +action('services.html').__action._hide Показать все
-            +e.col._right
+            +e.col._right.fromRight
               +list-anchors(getData('offer-list').services, 'service.html')._offer.__list
       +main-slide().section
         +slide-bg('park-technics.jpg')._right._o_70
         +container().container_static
           +e.row._center._center_m
-            +e.col._left
+            +e.col._left.fromLeft
               +big-heading()._left._huge.__heading Парк техники
               +action('park-technics.html').__action._hide Заказать технику
-            +e.col._right
+            +e.col._right.fromRight
               +list-anchors(getData('offer-list').park, 'park-technics.html')._offer.__list
       +main-slide().section.__map#contacts
         +slide-bg()._full._o_90.__map
           +map().__map
         +container().container_static
           +e.row._center._wrap._vertical
-            +big-heading()._left._huge.__heading._top._left Контакты
-            +e.col._w_500.__contact-form
+            +big-heading()._left._huge.__heading._top._left.fromLeft._backwards Контакты
+            +e.col._w_500.__contact-form.fromLeft._backwards
               +input({type:'name',placeholder:'Имя'})._white
               +input({type:'email',placeholder:'email'})._white
               +selectbox({placeholder: 'Выберите услугу', option: ['Негабаритные перевозки','Логистические услуги','Такелажные работы','Услуги грузоподъемных механизмов', 'Ремонт спецтехники',  'Международные перевозки грузов']})._white
@@ -73,7 +73,7 @@ block content
               +e.map-actions.__action
                 +action() Отправить
                 A(href='#').contact-text__toggler.toMap Назад
-            +e.contact-text
+            +e.contact-text.fromRight
               +contact-text()
               +action().__action._show._left.toForm Написать нам
             A(href='#').contact-text__toggler.toMap.toMap_main Назад

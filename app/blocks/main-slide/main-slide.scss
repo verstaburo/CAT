@@ -17,6 +17,26 @@
     .main-slide__slide-bg {
       transform: scale(1.05);
     }
+
+    .fromLeft {
+      @include screen(tablet-wide,min) {
+        animation: fadeInLeft 2s .2s;
+        animation-fill-mode: both;
+      }
+
+      &_backwards {
+        @include screen(tablet-wide,min) {
+          animation-fill-mode: backwards;
+        }
+      }
+    }
+
+    .fromRight {
+      @include screen(tablet-wide,min) {
+        animation: fadeInRight 2s .2s;
+        animation-fill-mode: both;
+      }
+    }
   }
 
   &__cities-list {
