@@ -22,14 +22,15 @@ block content
       +text().__text._more
         h3 ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ
       +b.park-technics
-        -
-          var data = getData('park-technics')[9]
-          data.img = 'assets/images/park-technics/10.png'
-        +product-preview(data).__product
-        -
-          var data = getData('park-technics')[15]
-          data.img = 'assets/images/park-technics/16.png'
-        +product-preview(data).__product
+        +e.content
+          -
+            var data = getData('park-technics')[9]
+            data.img = 'assets/images/park-technics/10.png'
+          +product-preview(data).__product
+          -
+            var data = getData('park-technics')[15]
+            data.img = 'assets/images/park-technics/16.png'
+          +product-preview(data).__product
 
 
 block footer

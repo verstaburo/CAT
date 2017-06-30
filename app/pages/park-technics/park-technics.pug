@@ -2,6 +2,7 @@ extends ../../layouts/default
 include ../../blocks/big-heading/big-heading
 include ../../blocks/product-preview/product-preview
 include ../../blocks/page-wrap/page-wrap
+include ../../blocks/button/button
 
 block head
   - var pageTitle = 'CAT - Парк техники'
@@ -16,11 +17,16 @@ block content
   +page-wrap()
     +big-heading().__heading парк техники
     +b.park-technics
-      - var i = 1
-      each item in getData('park-technics')
-        - item.img = 'assets/images/park-technics/'+i+'.png'
-        +product-preview(item).__product
-        - i++
+      +e.content
+        - var i = 1
+        each item in getData('park-technics')
+          - item.img = 'assets/images/park-technics/'+i+'.png'
+          +product-preview(item).__product
+          - i++
+      +button().__button.js-park-show-more показать еще
 
 block footer
   +footer()
+
+block scripts
+  script(src='assets/scripts/ajax/park.js')

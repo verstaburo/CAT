@@ -89,8 +89,6 @@
     }
 
     &_left {
-      padding-top: 11%;
-
       @include screen(tablet-wide,max) {
         display: none;
       }
@@ -104,6 +102,7 @@
   }
 
   &__info {
+    margin-top: 22%;
     font-size: 14px;
     color: #868696;
     letter-spacing: .025em;

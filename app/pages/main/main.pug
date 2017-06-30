@@ -26,13 +26,11 @@ block content
     +main-slide().__cities
       +slide-bg._full
       +container().container_static
-        +e.row
-          +e.col._w_full
-            +list(getData('offer-list').cities)._cities.__cities-list
+        +list(getData('offer-list').cities)._cities.__cities-list
     +e.slides#pagepiling
       +main-slide().section
         +slide-bg('main.jpg')._left._o_85
-        +container().container_static
+        +container().container_static.__main
           +e.row._center
             +e.col._w_685.fromLeft
               +big-heading()._left._huge.__heading._top Полный спектр услуг спецтехники

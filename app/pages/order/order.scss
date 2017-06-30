@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   padding-left: 9%;
-  padding-right: 4%;
-  padding-bottom: 135px;
+  padding-right: 9%;
+  padding-bottom: 125px;
 
   &_service {
     justify-content: center;
@@ -37,7 +37,6 @@
     padding-top: 10px;
 
     @include screen(tablet-wide, min) {
-      padding-left: 18px;
       width: 50%;
       padding-top: 60px;
     }

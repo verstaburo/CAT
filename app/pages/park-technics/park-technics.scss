@@ -1,12 +1,21 @@
 .park-technics {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
   padding-right: 120px;
+  padding-bottom: 20px;
 
   @include screen(desktop,max) {
-    justify-content: space-around;
-    padding: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include screen(desktop,max) {
+      justify-content: space-around;
+    }
   }
 
   &__product {
@@ -14,7 +23,22 @@
     margin-bottom: 98px;
 
     @include screen(tablet,max) {
-      margin-bottom: 42px;
+      margin-bottom: 20px;
     }
+  }
+
+  &__button {
+    display: block;
+    margin: 73px auto 0;
+
+    @include screen(tablet,max) {
+      display: none;
+    }
+  }
+
+  .spinner {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

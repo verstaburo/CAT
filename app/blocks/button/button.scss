@@ -1,6 +1,6 @@
 .button {
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
   background-color: $color-main;
   font-family: $PfDin;
   font-weight: 700;
@@ -9,7 +9,7 @@
   color: #fff;
   line-height: 4;
   padding: 0 30px;
-  max-width: 225px;
+  min-width: 225px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;

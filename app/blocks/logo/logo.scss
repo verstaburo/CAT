@@ -3,6 +3,11 @@
   width: 85px;
   height: 71px;
 
+  @include screen(tablet,max) {
+    width: 76px;
+    height: 60px;
+  }
+
   svg {
     display: block;
     width: 100%;
@@ -14,8 +19,8 @@
   }
 
   &_notext {
-    width: 80px;
-    height: 30px;
+    width: 80px !important;
+    height: 30px !important;
 
     svg {
       fill: $color-main;
