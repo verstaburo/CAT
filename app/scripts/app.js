@@ -8,6 +8,7 @@ import productPreview from '../blocks/product-preview/product-preview';
 import services from '../pages/services/services';
 import selectbox from '../blocks/selectbox/selectbox';
 import popup from './common/popup';
+import header from '../components/header/header';
 
 const $ = window.$;
 
@@ -23,4 +24,5 @@ $(() => {
   window.rebuildServicesGrid = services;
   selectbox();
   popup();
+  header();
 });

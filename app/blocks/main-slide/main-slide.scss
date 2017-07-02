@@ -1,3 +1,42 @@
+@keyframes fromLeft {
+
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromRight {
+
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromDown {
+
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .main-slide {
   display: flex;
   min-height: 100vh;
@@ -15,14 +54,9 @@
 
   &.active {
 
-    .main-slide__slide-bg {
-      transform: scale(1.05);
-    }
-
     .fromLeft {
       @include screen(tablet-wide,min) {
-        animation: fadeInLeft 2s .2s;
-        animation-fill-mode: both;
+        animation: 1.5s ease-in-out 1s 1 fromLeft both;
       }
 
       &_backwards {
@@ -30,12 +64,32 @@
           animation-fill-mode: backwards;
         }
       }
+
+      &_d {
+
+        &_1200 {
+          @include screen(tablet-wide,min) {
+            animation-delay: 1.2s;
+          }
+        }
+
+        &_1400 {
+          @include screen(tablet-wide,min) {
+            animation-delay: 1.4s;
+          }
+        }
+      }
     }
 
     .fromRight {
       @include screen(tablet-wide,min) {
-        animation: fadeInRight 2s .2s;
-        animation-fill-mode: both;
+        animation: 1.5s ease-in-out 1s 1 fromRight both;
+      }
+    }
+
+    .fromDown {
+      @include screen(tablet-wide,min) {
+        animation: 1.5s ease-in-out 1s 1 fromDown both;
       }
     }
   }
@@ -175,7 +229,6 @@
 
     z-index: -1;
     overflow: hidden;
-    transition: transform 5s cubic-bezier(.3, 0, .7, 1) .5s;
 
     &::after {
       position: absolute;
@@ -396,5 +449,12 @@
     position: relative;
     margin-right: auto;
     pointer-events: all;
+  }
+}
+
+.fade {
+  @include screen(tablet-wide, min) {
+    transform: scale(1.05);
+    transition: transform 5s ease-in-out;
   }
 }

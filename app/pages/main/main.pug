@@ -11,7 +11,6 @@ include ../../blocks/input/input
 include ../../blocks/main-slide/main-slide
 include ../../components/main-controls/main-controls
 include ../../blocks/map-controls/map-controls
-include ../../blocks/selectbox/selectbox
 
 block head
   - var pageTitle = 'CAT - Главная'
@@ -32,43 +31,42 @@ block content
         +slide-bg('main.jpg')._left._o_85
         +container().container_static.main-slide__main
           +e.row._center
-            +e.col._w_685.fromLeft
-              +big-heading()._left._huge.__heading._top Полный спектр услуг спецтехники
-              +text()._light._white
+            +e.col._w_685
+              +big-heading()._left._huge.__heading._top.fromLeft Полный спектр услуг спецтехники
+              +text()._light._white.fromLeft._d_1200
                 p Перевозка крупногабаритных и тяжеловесных грузов, услуги грузоподъемной техники, сервисное обслуживание спецтехники.
-              +action('order-service.html').__action заказать услугу
+              +action('order-service.html').__action.fromLeft._d_1400 заказать услугу
           +e.scroll
             +scroll()
       +main-slide().section
         +slide-bg('services.jpg')._right._o_70
         +container().container_static
           +e.row._center._center_m
-            +e.col._left.fromLeft
-              +big-heading()._left._huge.__heading Наши услуги
-              +action('services.html').__action._hide Показать все
-            +e.col._right.fromRight
-              +list-anchors(getData('offer-list').services, 'service.html')._offer.__list
+            +e.col._left
+              +big-heading()._left._huge.__heading.fromLeft Наши услуги
+              +action('services.html').__action._hide.fromLeft._d_1200 Показать все
+            +e.col._right
+              +list-anchors(getData('offer-list').services, 'service.html')._offer.__list.fromDown
       +main-slide().section
         +slide-bg('park-technics.jpg')._right._o_70
         +container().container_static
           +e.row._center._center_m
-            +e.col._left.fromLeft
-              +big-heading()._left._huge.__heading Парк техники
-              +action('park-technics.html').__action._hide Заказать технику
-            +e.col._right.fromRight
-              +list-anchors(getData('offer-list').park, 'park-technics.html')._offer.__list
+            +e.col._left
+              +big-heading()._left._huge.__heading.fromLeft Парк техники
+              +action('park-technics.html').__action._hide.fromLeft._d_1200 Заказать технику
+            +e.col._right
+              +list-anchors(getData('offer-list').park, 'park-technics.html')._offer.__list.fromDown
       +main-slide().section.__map#contacts
         +slide-bg()._full._o_90.__map
           +map().__map
         +container().container_static
           +e.row._center._wrap._vertical
             +big-heading()._left._huge.__heading._top._left.fromLeft._backwards Контакты
-            +e.col._w_500.__contact-form.fromLeft._backwards
+            +e.col._w_500.__contact-form.fromLeft._backwards._d_1200
               +input({type:'name',placeholder:'Имя'})._white
               +input({type:'email',placeholder:'email'})._white
-              +selectbox({placeholder: 'Выберите услугу', option: ['Негабаритные перевозки','Логистические услуги','Такелажные работы','Услуги грузоподъемных механизмов', 'Ремонт спецтехники',  'Международные перевозки грузов']})._white
               +input({type:'text',placeholder:'Комментарий'})._white
-              +e.map-actions.__action
+              +e.map-actions.__action.fromLeft._d_1400
                 +action() Отправить
                 A(href='#').contact-text__toggler.toMap Назад
             +e.contact-text.fromRight

@@ -25,18 +25,22 @@ export default () => {
         for (; i < $('.pagination__dot').length; i++) {
           $('.pagination__dot').eq(i).removeClass('pagination__dot_active');
         }
+        setTimeout(function () {
+          $('.main-slide').find('.main-slide__slide-bg').removeClass('fade');
+          $('.main-slide.active').find('.main-slide__slide-bg').addClass('fade');
+        }, 500);
       },
     });
-
-    $.fn.pagepiling.moveSectionDown();
-
-    setTimeout(function() {
-      $.fn.pagepiling.moveSectionUp();
-    }, 0);
   }
 
   if (w.width() < 1024) {
     $('.main-slide__contact-form').addClass('main-slide__contact-form_disabled');
+  }
+
+  if (w.width() > 1024) {
+    setTimeout(function () {
+      $('.main-slide.active').find('.main-slide__slide-bg').addClass('fade');
+    }, 400);
   }
 
   function init() {
