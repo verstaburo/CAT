@@ -72,4 +72,19 @@ export default () => {
     $('.toMap_main').hide();
     $('.map-controls').addClass('disabled');
   });
+
+  // Инициализация скролла (list_offer)
+  const offerListScroll = () => {
+    const hH = $('.header').outerHeight();
+    const fH = $('.footer').outerHeight();
+    const wH = $(window).height();
+
+    $('.list_offer').each(function() {
+      const list = $(this);
+      list.css('max-height', wH - hH - fH + 'px').jScrollPane();
+    });
+  };
+
+  offerListScroll();
+  $(window).on('resize', offerListScroll);
 };
