@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 130px;
+    padding-left: 90px;
     padding-right: 90px;
     z-index: 1;
 
@@ -44,7 +44,7 @@
 
   &__image {
     position: relative;
-    width: 87%;
+    width: 90%;
     height: auto;
     max-height: 100vh;
     margin-left: auto;
@@ -87,24 +87,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -250px;
-    width: 94%;
+    margin-top: -25vw;
     min-height: 395px;
     padding: 40px 179px 40px 0;
     background-color: #fff;
+    padding-left: 150px;
+    max-width: 100%;
+
+    @include screen(desktop,max) {
+      padding-left: 0;
+    }
 
     @media (max-width: 1024px) {
       padding-right: 35px;
     }
 
     @media (max-width: 768px) {
-      width: initial;
       min-height: initial;
       flex-direction: column;
       margin-top: -60px;
       margin-left: 20px;
       margin-right: 20px;
-      padding-left: 35px;
+      padding-left: 35px !important;
+      width: auto !important;
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
     }
 
     .text {
@@ -128,15 +135,18 @@
   &__content {
     position: relative;
     z-index: 1;
-    display: flex;
     width: 100%;
     background-color: #fff;
 
-    @media (max-width: 768px) {
-      flex-direction: column;
-      margin-top: 25px;
-      padding-left: 40px;
-      padding-right: 40px;
+    .container_static {
+      display: flex;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        margin-top: 25px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
     }
 
     .about__col_right {
@@ -212,29 +222,32 @@
   &__info-block {
     position: relative;
     z-index: 1;
-    display: flex;
-    align-items: flex-end;
     width: 100%;
     padding-top: 134px;
     padding-bottom: 149px;
     background-color: #fff;
 
-    @media (max-width: 768px) {
-      align-items: flex-start;
-      flex-direction: column;
-      margin-top: 60px;
-      margin-bottom: 90px;
-      padding: 0 50px 0 40px;
-    }
+    .container_static {
+      display: flex;
+      align-items: flex-end;
 
-    .about__col {
+      @media (max-width: 768px) {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-bottom: 90px;
+        padding: 0 50px 0 40px !important;
+      }
 
-      &_right {
-        padding-top: 0;
-        padding-bottom: 0;
-        background-color: transparent;
+      .about__col {
 
-        .text { color: #74747d; }
+        &_right {
+          padding-top: 0;
+          padding-bottom: 0;
+          background-color: transparent;
+
+          .text { color: #74747d; }
+        }
       }
     }
   }
