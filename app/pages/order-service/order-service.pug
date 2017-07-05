@@ -19,13 +19,16 @@ block content
   +page-wrap()
     +big-heading() Заказать услугу
     +b.order._service
-      +e.form
-        +input({type: 'name', placeholder: 'имя'})._medium.__input
-        +input({type: 'email', placeholder: 'email'})._medium.__input
-        +input({type: 'tel', placeholder: 'телефон'})._medium.__input
-        +selectbox({placeholder: 'Выберите услугу', option: ['Негабаритные перевозки','Логистические услуги','Такелажные работы','Услуги грузоподъемных механизмов', 'Ремонт спецтехники',  'Международные перевозки грузов']})._medium.__input
+      +e.FORM(methold='POST' action='#' novalidate).form.js-order-service-form
+        +input({type: 'text', placeholder: 'имя'})._medium.__input#orderName
+        +input({type: 'email', placeholder: 'email'})._medium.__input#orderEmail
+        +input({type: 'tel', placeholder: 'телефон'})._medium.__input#orderPhone
+        +selectbox({placeholder: 'Выберите услугу', option: ['Негабаритные перевозки','Логистические услуги','Такелажные работы','Услуги грузоподъемных механизмов', 'Ремонт спецтехники',  'Международные перевозки грузов']})._medium.__input#orderService
         +input({type: 'text', placeholder: 'комментарий'})._medium.__input
         +button().__button Отправить заявку
 
 block footer
   +footer()
+
+block scripts
+  script(src='assets/scripts/ajax/order-service-validation.js')

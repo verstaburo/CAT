@@ -9,12 +9,14 @@ import services from '../pages/services/services';
 import selectbox from '../blocks/selectbox/selectbox';
 import popup from './common/popup';
 import header from '../components/header/header';
+import input from '../blocks/input/input';
 
 const $ = window.$;
 
 $(() => {
   svg4everybody();
   objectFitImages();
+  input();
   menu();
   mapInit();
   main();

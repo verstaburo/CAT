@@ -19,12 +19,15 @@ block content
     +big-heading() Terex demag <br> ac 350/6
     +b.order
       +product-details()
-      +e.form
-        +input({type: 'name', placeholder: 'имя'})._medium.__input
-        +input({type: 'email', placeholder: 'email'})._medium.__input
-        +input({type: 'tel', placeholder: 'телефон'})._medium.__input
+      +e.FORM(methold='POST' action='#' novalidate).form.js-order-form
+        +input({type: 'text', placeholder: 'имя', name: 'name'})._medium.__input#orderName
+        +input({type: 'email', placeholder: 'email', name: 'email'})._medium.__input#orderEmail
+        +input({type: 'tel', placeholder: 'телефон', name: 'phone'})._medium.__input#orderPhone
         +button().__button Отправить заявку
 
 
 block footer
   +footer()
+
+block scripts
+  script(src='assets/scripts/ajax/order-validation.js')

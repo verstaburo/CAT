@@ -9,9 +9,24 @@
   background-color: transparent;
   border-bottom: 1px solid rgba(101, 101, 106, .4);
 
+  &-error-message {
+    margin-top: 5px;
+    font-size: 14px;
+    color: red;
+  }
+
+  @include transition(color, border-color);
+
   @include screen(tablet,max) {
     font-size: 15px;
     line-height: 3.2;
+  }
+
+  &.has-error {
+    border-color: red;
+    color: red;
+
+    &::placeholder { color: red; }
   }
 
   &_medium {
@@ -38,5 +53,7 @@
   &::placeholder {
     text-transform: uppercase;
     opacity: 1;
+
+    @include transition(color);
   }
 }
