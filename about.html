@@ -33,7 +33,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <a class="logo header__desktop" href="#">
+            <a class="logo header__desktop" href="main.html">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.99 64.55">
                     <path d="M8.28 4.56a1.35 1.35 0 0 0-1.36-1.35H4.84a1.39 1.39 0 0 0-1.36 1.35v24.8a1.35 1.35 0 0 0 1.36 1.35h2.08a1.35 1.35 0 0 0 1.36-1.36v-5.14h3.2v5.18a4.55 4.55 0 0 1-4.56 4.52H4.84a4.58 4.58 0 0 1-4.51-4.56V4.56A4.58 4.58 0 0 1 4.84 0h2.08a4.55 4.55 0 0 1 4.55 4.55v3.78H8.28zm31.96 19.37l-1.4 10h-3.25L37.38 21h8.18L43.2 3.15h-.24l-2 15.35h-3.2L40.19 0h5.76l3.25 23.92zm9.25 2.47l1.07 7.51h-3.23l-1.11-7.51zM81.07 3.21v30.7h-3.2V3.21h-3.92V0h11v3.21z"
                         fill="#fc9a00"></path>
@@ -41,12 +41,12 @@
                         fill="#aaabb2"></path>
                 </svg>
             </a>
-            <a class="logo logo_notext header__mobile" href="#">
+            <a class="logo logo_notext header__mobile" href="main.html">
                 <svg><use xlink:href="assets/images/icon.svg#icon_logonotext"></use></svg>
             </a>
             <div class="menu header__menu">
                 <div class="menu__mobile-controls">
-                    <a class="logo logo_notext" href="#">
+                    <a class="logo logo_notext" href="main.html">
                         <svg><use xlink:href="assets/images/icon.svg#icon_logonotext"></use></svg>
                     </a>
                     <button class="burger burger_close"></button>
@@ -73,10 +73,10 @@
             <button class="burger header__burger"></button>
         </div>
     </header>
-    <div class="about container container_static">
+    <div class="about">
         <div class="about__header">
             <img class="about__image" src="assets/images/about/header.jpg" alt="" role="presentation" />
-            <div class="about__info">
+            <div class="about__info container container_static">
                 <h1 class="big-heading about__heading">О компании</h1>
                 <div class="text text_big text_grey">
                     <p>Работа со сложными грузами, обслуживание спецтехники и помощь в организации собственных служб перевозки</p>
@@ -84,58 +84,62 @@
             </div>
         </div>
         <div class="about__content">
-            <div class="about__col about__col_left">
-                <div class="bordered-text">
-                    <h4 class="bordered-text__heading">Работа с крупногабаритными грузами и обслуживание спецтехники</h4>
-                    <div class="bordered-text__content">
-                        <div class="text">
-                            <p>Компания Спецавтотранс – это команда профессионалов с собственным парком спецтехники и опытом работы с крупными клиентами и сложными проектами. Основными направлениями ООО «САТ» является:</p>
-                            <ol>
-                                <li>Перевозки крупногабаритных и тяжеловесных грузов.</li>
-                                <li>Услуги грузоподъемной техники.</li>
-                                <li>Сервисное обслуживание спецтехники.</li>
-                            </ol>
-                            <p>В работе компании Спецавтотранс, используется собственный парк спецтехники: тягачи, тралы и подъемные краны всемирно известных брендов (LIEBHERR, TEREX-DEMAG, TADANO, FUWA, HAULOTTE, Nooteboom, Faymonville, Mercedes, Man).</p>
+            <div class="container_static">
+                <div class="about__col about__col_left">
+                    <div class="bordered-text">
+                        <h4 class="bordered-text__heading">Работа с крупногабаритными грузами и обслуживание спецтехники</h4>
+                        <div class="bordered-text__content">
+                            <div class="text">
+                                <p>Компания Спецавтотранс – это команда профессионалов с собственным парком спецтехники и опытом работы с крупными клиентами и сложными проектами. Основными направлениями ООО «САТ» является:</p>
+                                <ol>
+                                    <li>Перевозки крупногабаритных и тяжеловесных грузов.</li>
+                                    <li>Услуги грузоподъемной техники.</li>
+                                    <li>Сервисное обслуживание спецтехники.</li>
+                                </ol>
+                                <p>В работе компании Спецавтотранс, используется собственный парк спецтехники: тягачи, тралы и подъемные краны всемирно известных брендов (LIEBHERR, TEREX-DEMAG, TADANO, FUWA, HAULOTTE, Nooteboom, Faymonville, Mercedes, Man).</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="about__image-content">
+                        <img src="assets/images/about/left-image.jpg" alt="">
+                    </div>
                 </div>
-                <div class="about__image-content">
-                    <img src="assets/images/about/left-image.jpg" alt="">
-                </div>
-            </div>
-            <div class="about__col about__col_right">
-                <div class="text">
-                    <h2 class="about__right-heading">География</h2>
-                    <p>Полностью освоена территория Дальневосточного региона: Хабаровск, Благовещенск, Владивосток, Якутск, Южно-Сахалинск, Магадан, Биробиджан, Чита; Иркутск, Комсомольск-на-Амуре. Среди международных отправлений основной поток грузов приходится
-                        на Китай. Дополнительно рассматриваем новые направления, в том числе и международные.</p>
-                </div>
-                <div class="text">
-                    <h2 class="about__right-heading">Расширенный перечень услуг:</h2>
-                    <ul>
-                        <li>услуги крана в Хабаровске и городах Дальнего Востока;</li>
-                        <li>логистические услуги при перевозке груза;</li>
-                        <li>перевозка грузов автотранспортом;</li>
-                        <li>перевозка грузов речным и морским транспортом;</li>
-                        <li>перевозка негабаритных и тяжеловесных грузов;</li>
-                        <li>такелажные работы;</li>
-                        <li>спуск/подъем водного транспорта на воду;</li>
-                        <li>оказание услуг транспортом и подъемной техникой населению;</li>
-                        <li>ремонт спецтехники, грузовых автомобилей;</li>
-                        <li>продажа спецтехники, автомобилей, запасных частей.</li>
-                    </ul>
+                <div class="about__col about__col_right">
+                    <div class="text">
+                        <h2 class="about__right-heading">География</h2>
+                        <p>Полностью освоена территория Дальневосточного региона: Хабаровск, Благовещенск, Владивосток, Якутск, Южно-Сахалинск, Магадан, Биробиджан, Чита; Иркутск, Комсомольск-на-Амуре. Среди международных отправлений основной поток грузов
+                            приходится на Китай. Дополнительно рассматриваем новые направления, в том числе и международные.</p>
+                    </div>
+                    <div class="text">
+                        <h2 class="about__right-heading">Расширенный перечень услуг:</h2>
+                        <ul>
+                            <li>услуги крана в Хабаровске и городах Дальнего Востока;</li>
+                            <li>логистические услуги при перевозке груза;</li>
+                            <li>перевозка грузов автотранспортом;</li>
+                            <li>перевозка грузов речным и морским транспортом;</li>
+                            <li>перевозка негабаритных и тяжеловесных грузов;</li>
+                            <li>такелажные работы;</li>
+                            <li>спуск/подъем водного транспорта на воду;</li>
+                            <li>оказание услуг транспортом и подъемной техникой населению;</li>
+                            <li>ремонт спецтехники, грузовых автомобилей;</li>
+                            <li>продажа спецтехники, автомобилей, запасных частей.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="about__info-block">
-            <div class="about__col about__col_left">
-                <div class="bordered-text">
-                    <h4 class="bordered-text__heading">Отправляем грузы во все города России, осуществляем международные перевозки.</h4>
+            <div class="container_static">
+                <div class="about__col about__col_left">
+                    <div class="bordered-text">
+                        <h4 class="bordered-text__heading">Отправляем грузы во все города России, осуществляем международные перевозки.</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="about__col about__col_right">
-                <div class="text">
-                    <p>Доверьте нам оформление разрешений, сопроводительной документации, проведение проверок, экспертиз. В компании Спецавтотранс вы найдете комплексный подход к работе с грузами, когда от заказчика требуется только объяснить подробности
-                        задачи.</p>
+                <div class="about__col about__col_right">
+                    <div class="text">
+                        <p>Доверьте нам оформление разрешений, сопроводительной документации, проведение проверок, экспертиз. В компании Спецавтотранс вы найдете комплексный подход к работе с грузами, когда от заказчика требуется только объяснить подробности
+                            задачи.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,7 +223,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__row">
-                <a class="logo logo_notext footer__logo" href="#">
+                <a class="logo logo_notext footer__logo" href="main.html">
                     <svg><use xlink:href="assets/images/icon.svg#icon_logonotext"></use></svg>
                 </a>
                 <div class="footer__phones">
