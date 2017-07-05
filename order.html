@@ -85,12 +85,12 @@
                 </div>
                 <p class="product-preview__desc-text">Макс. грузоподъемность 350 тонн. Длина основной стрелы 64 метра, длина удлинителя до 72 метров. Макс. высота подъема 125 метров.</p>
             </div>
-            <div class="order__form">
-                <input class="input input_medium order__input" type="name" placeholder="имя" />
-                <input class="input input_medium order__input" type="email" placeholder="email" />
-                <input class="input input_medium order__input" type="tel" placeholder="телефон" />
+            <form class="order__form js-order-form" methold="POST" action="#" novalidate="novalidate">
+                <input class="input input_medium order__input" type="text" name="name" placeholder="имя" id="orderName" />
+                <input class="input input_medium order__input" type="email" name="email" placeholder="email" id="orderEmail" />
+                <input class="input input_medium order__input" type="tel" name="phone" placeholder="телефон" id="orderPhone" />
                 <button class="button order__button">Отправить заявку</button>
-            </div>
+            </form>
         </div>
     </main>
     <footer class="footer">
@@ -131,6 +131,7 @@
     </footer>
     <script src="assets/scripts/libs/jquery.magnific-popup.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
+    <script src="assets/scripts/ajax/order-validation.js"></script>
 </body>
 
 </html>

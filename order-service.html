@@ -76,11 +76,11 @@
     <main class="page-wrap container" role="main">
         <h1 class="big-heading">Заказать услугу</h1>
         <div class="order order_service">
-            <div class="order__form">
-                <input class="input input_medium order__input" type="name" placeholder="имя" />
-                <input class="input input_medium order__input" type="email" placeholder="email" />
-                <input class="input input_medium order__input" type="tel" placeholder="телефон" />
-                <div class="selectbox input input_medium order__input">
+            <form class="order__form js-order-service-form" methold="POST" action="#" novalidate="novalidate">
+                <input class="input input_medium order__input" type="text" placeholder="имя" id="orderName" />
+                <input class="input input_medium order__input" type="email" placeholder="email" id="orderEmail" />
+                <input class="input input_medium order__input" type="tel" placeholder="телефон" id="orderPhone" />
+                <div class="selectbox input input_medium order__input" id="orderService">
                     <input class="selectbox__input" type="hidden" value="" required="required" />
                     <div class="selectbox__button">Выберите услугу</div>
                     <ul class="selectbox__list">
@@ -94,7 +94,7 @@
                 </div>
                 <input class="input input_medium order__input" type="text" placeholder="комментарий" />
                 <button class="button order__button">Отправить заявку</button>
-            </div>
+            </form>
         </div>
     </main>
     <footer class="footer">
@@ -135,6 +135,7 @@
     </footer>
     <script src="assets/scripts/libs/jquery.magnific-popup.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
+    <script src="assets/scripts/ajax/order-service-validation.js"></script>
 </body>
 
 </html>
