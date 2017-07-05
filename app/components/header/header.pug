@@ -8,11 +8,13 @@ mixin header(data, main)
       +container()
         +logo()
         +menu(data)._main
-        +burger()._white.__burger
+        +e.burger
+          +burger()._white
   else
     +b.HEADER.header&attributes(attributes)
       +container()
         +logo().__desktop
         +logonotext().__mobile
         +menu(data).__menu
-        +burger().__burger
+        +e.burger
+          +burger()

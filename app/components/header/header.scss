@@ -15,6 +15,17 @@
     z-index: 10;
     padding-bottom: 0;
 
+    @include screen(tablet, max) {
+      position: absolute;
+
+      .header__burger {
+        top: 24px;
+        right: 20px;
+        padding: 0;
+        background-color: transparent;
+      }
+    }
+
     .menu {
       padding-right: 0;
     }
@@ -31,6 +42,17 @@
 
   &__burger {
     margin-top: 5px;
+
+    @include screen(tablet, max) {
+      margin-top: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 24px 20px;
+      background-color: #fff;
+      z-index: 10;
+    }
+
   }
 
   &__desktop {
