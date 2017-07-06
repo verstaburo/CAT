@@ -154,10 +154,13 @@ $article-offset-top-mobile: 120px;
 
   &__article {
     position: relative;
+    width: 100%;
     padding: 97px 215px 103px 106px;
     background-color: #f6f6f6;
     margin-top: -$article-offset-top;
     z-index: 1;
+
+    &-inner { max-width: 489px; }
 
     @media (min-width: 768px) and (max-width: 1024px) {
       padding: 97px 107px 51px 53px;
