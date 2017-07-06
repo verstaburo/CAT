@@ -4,6 +4,9 @@ $article-offset-top-mobile: 120px;
 .project {
   display: block;
   padding-bottom: 125px;
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: 768px) {
     padding-bottom: 59px;
@@ -160,8 +163,6 @@ $article-offset-top-mobile: 120px;
     margin-top: -$article-offset-top;
     z-index: 1;
 
-    &-inner { max-width: 489px; }
-
     @media (min-width: 768px) and (max-width: 1024px) {
       padding: 97px 107px 51px 53px;
     }
@@ -169,7 +170,7 @@ $article-offset-top-mobile: 120px;
     @media (max-width: 768px) {
       margin-top: -$article-offset-top-mobile;
       margin-left: -20px;
-      margin-right: -20px;
+      width: calc(100% + 40px);
       padding: 165px 40px 56px;
     }
   }
