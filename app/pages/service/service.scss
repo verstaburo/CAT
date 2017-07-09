@@ -42,18 +42,34 @@
     }
   }
 
-  &__heading-image {
+  &__info-block {
+    margin-top: 75px;
+
+    @include screen(tablet-wide,max) {
+      display: none;
+    }
+  }
+
+  &__heading-left {
     position: absolute;
     left: 45px;
     top: 0;
-    height: 520px;
     width: 37.5%;
-    overflow: hidden;
 
-    @include screen(tablet-wide, max) {
+    @include screen(tablet-wide,max) {
       transform: translate(-50%, -50%);
       left: 50%;
       width: calc(100% - 40px);
+    }
+  }
+
+  &__heading-image {
+    position: relative;
+    height: 520px;
+    width: 100%;
+    overflow: hidden;
+
+    @include screen(tablet-wide, max) {
       height: 240px;
     }
 
@@ -102,12 +118,12 @@
   }
 
   &__info {
-    margin-top: 22%;
     font-size: 14px;
     color: #868696;
     letter-spacing: .025em;
     line-height: 1.517;
-    width: 35%;
+    width: 40%;
+    margin-bottom: 15px;
   }
 
   &__bot-image {
