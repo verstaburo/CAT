@@ -30,35 +30,56 @@
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: 100;
-  src: url('../fonts/BebasNeue Thin.otf')  format('opentype');
+  src: url('./fonts/BebasNeue/BebasNeueThin.eot');
+  src:
+    url('../fonts/BebasNeue/BebasNeueThin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue/BebasNeueThin.woff2') format('woff2'),
+    url('../fonts/BebasNeue/BebasNeueThin.woff') format('woff'),
+    url('../fonts/BebasNeue/BebasNeueThin.otf')  format('opentype'),
+    url('../fonts/BebasNeue/BebasNeueThin.ttf')  format('truetype'),
+    url('../fonts/BebasNeue/BebasNeueThin.svg#BebasNeueThin') format('svg');
 }
 
 @font-face {
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/BebasNeue Light.otf')  format('opentype');
+  src: url('./fonts/BebasNeue/BebasNeueLight.eot');
+  src:
+    url('../fonts/BebasNeue/BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue/BebasNeueLight.woff2') format('woff2'),
+    url('../fonts/BebasNeue/BebasNeueLight.woff') format('woff'),
+    url('../fonts/BebasNeue/BebasNeueLight.otf')  format('opentype'),
+    url('../fonts/BebasNeue/BebasNeueLight.ttf')  format('truetype'),
+    url('../fonts/BebasNeue/BebasNeueLight.svg#BebasNeueLight') format('svg');
 }
 
 @font-face {
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/BebasNeue Regular.otf')  format('opentype');
+  src: url('./fonts/BebasNeue/BebasNeueRegular.eot');
+  src:
+    url('../fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/BebasNeue/BebasNeueRegular.otf')  format('opentype'),
+    url('../fonts/BebasNeue/BebasNeueRegular.ttf')  format('truetype'),
+    url('../fonts/BebasNeue/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
 }
-
-// @font-face {
-//   font-family: 'Bebas Neue';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url('../fonts/BebasNeue Book.otf')  format('opentype');
-// }
 
 @font-face {
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/BebasNeue Bold.otf')  format('opentype');
+  src: url('./fonts/BebasNeue/BebasNeueBold.eot');
+  src:
+    url('../fonts/BebasNeue/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue/BebasNeueBold.woff2') format('woff2'),
+    url('../fonts/BebasNeue/BebasNeueBold.woff') format('woff'),
+    url('../fonts/BebasNeue/BebasNeueBold.otf')  format('opentype'),
+    url('../fonts/BebasNeue/BebasNeueBold.ttf')  format('truetype'),
+    url('../fonts/BebasNeue/BebasNeueBold.svg#BebasNeueBold') format('svg');
 }
 
 // Pf Din
@@ -66,98 +87,182 @@
   font-family: 'Pf Din';
   font-style: normal;
   font-weight: 100;
-  src: url('../fonts/PFDINTEXTCONDPRO-XTHIN.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROXTHIN.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHIN.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHIN.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHIN.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHIN.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHIN.svg#PFDINTEXTCONDPROXTHIN') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: italic;
   font-weight: 100;
-  src: url('../fonts/PFDINTEXTCONDPRO-XTHINITALIC.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROXTHINITALIC.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHINITALIC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHINITALIC.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHINITALIC.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHINITALIC.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXTHINITALIC.svg#PFDINTEXTCONDPROXTHINITALIC') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: normal;
   font-weight: 200;
-  src: url('../fonts/PFDINTEXTCONDPRO-THIN.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROTHIN.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHIN.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHIN.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHIN.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHIN.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHIN.svg#PFDINTEXTCONDPROTHIN') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: italic;
   font-weight: 200;
-  src: url('../fonts/PFDINTEXTCONDPRO-THINITALIC.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROTHINITALIC.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHINITALIC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHINITALIC.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHINITALIC.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHINITALIC.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROTHINITALIC.svg#PFDINTEXTCONDPROTHINITALIC') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/PFDINTEXTCONDPRO-LIGHT.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROLIGHT.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHT.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHT.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHT.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHT.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHT.svg#PFDINTEXTCONDPROLIGHT') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: italic;
   font-weight: 300;
-  src: url('../fonts/PFDINTEXTCONDPRO-LIGHTITALIC.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROLIGHTITALIC.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHTITALIC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHTITALIC.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHTITALIC.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHTITALIC.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROLIGHTITALIC.svg#PFDINTEXTCONDPROLIGHTITALIC') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/PFDINTEXTCONDPRO-REGULAR.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROREGULAR.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROREGULAR.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROREGULAR.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROREGULAR.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROREGULAR.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROREGULAR.svg#PFDINTEXTCONDPROREGULAR') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/PFDINTEXTCONDPRO-ITALIC.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROITALIC.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROITALIC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROITALIC.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROITALIC.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROITALIC.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROITALIC.svg#PFDINTEXTCONDPROITALIC') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/PFDINTEXTCONDPRO-MEDIUM.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROMEDIUM.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUM.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUM.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUM.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUM.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUM.svg#PFDINTEXTCONDPROMEDIUM') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: italic;
   font-weight: 500;
-  src: url('../fonts/PFDINTEXTCONDPRO-MEDIUMITALIC.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROMEDIUMITALIC.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUMITALIC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUMITALIC.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUMITALIC.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUMITALIC.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROMEDIUMITALIC.svg#PFDINTEXTCONDPROMEDIUMITALIC') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/PFDINTEXTCONDPRO-BOLD.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROBOLD.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLD.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLD.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLD.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLD.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLD.svg#PFDINTEXTCONDPROBOLD') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/PFDINTEXTCONDPRO-BOLDITALIC.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROBOLDITALIC.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLDITALIC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLDITALIC.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLDITALIC.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLDITALIC.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROBOLDITALIC.svg#PFDINTEXTCONDPROBOLDITALIC') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/PFDINTEXTCONDPRO-XBLACK.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROXBLACK.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACK.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACK.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACK.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACK.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACK.svg#PFDINTEXTCONDPROXBLACK') format('svg');
 }
 
 @font-face {
   font-family: 'Pf Din';
   font-style: italic;
   font-weight: 900;
-  src: url('../fonts/PFDINTEXTCONDPRO-XBLACKITALIC.TTF')  format('truetype');
+  src: url('./fonts/PfDin/PFDINTEXTCONDPROXBLACKITALIC.eot');
+  src:
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACKITALIC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACKITALIC.woff2') format('woff2'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACKITALIC.woff') format('woff'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACKITALIC.ttf')  format('truetype'),
+    url('../fonts/PfDin/PFDINTEXTCONDPROXBLACKITALIC.svg#PFDINTEXTCONDPROXBLACKITALIC') format('svg');
 }
 
 // Circle
@@ -165,9 +270,9 @@
   font-family: 'Circe';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Circe-Regular.eot');
+  src: url('../fonts/Circe/Circe-Regular.eot');
   src:
-    url('../fonts/Circe-Regular.woff') format('woff'),
-    url('../fonts/Circe-Regular.ttf')  format('truetype'),
-    url('../fonts/Circe-Regular.svg#Circe-Regular') format('svg');
+    url('../fonts/Circe/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circe/Circe-Regular.ttf')  format('truetype'),
+    url('../fonts/Circe/Circe-Regular.svg#Circe-Regular') format('svg');
 }
